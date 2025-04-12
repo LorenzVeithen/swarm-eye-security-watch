@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center space-x-2">
           <Shield className="h-8 w-8 text-security-500" />
-          <span className="text-xl font-bold">Sturnus</span>
+          <span className="text-xl font-bold">STURNUS</span>
         </a>
 
         {/* Desktop Menu */}

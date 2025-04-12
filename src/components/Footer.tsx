@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
               <Shield className="h-8 w-8 text-security-500" />
-              <span className="text-xl font-bold">Sturnus</span>
+              <span className="text-xl font-bold">STURNUS</span>
             </div>
             <p className="text-sm text-muted-foreground mb-6">
               Advanced drone swarm security solutions for comprehensive site protection.
