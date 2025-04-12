@@ -1,11 +1,11 @@
 
-import { Check, Drone, Radar, Shield, AlertCircle } from "lucide-react";
+import { Check, Plane, Radar, Shield, AlertCircle } from "lucide-react";
 
 const steps = [
   {
     title: "Deployment",
     description: "Our drones are deployed in a coordinated swarm pattern, creating an extensive coverage network.",
-    icon: Drone
+    icon: Plane
   },
   {
     title: "Detection",

@@ -1,5 +1,5 @@
 
-import { Shield, Mail, Phone, MapPin, Drone, Twitter, Linkedin, Facebook } from "lucide-react";
+import { Shield, Mail, Phone, MapPin, Twitter, Linkedin, Facebook } from "lucide-react";
 
 const Footer = () => {
   return (

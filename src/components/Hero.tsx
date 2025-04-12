@@ -1,5 +1,4 @@
-
-import { Drone, Shield, Eye, Lock } from "lucide-react";
+import { Plane, Shield, Eye, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -56,25 +55,25 @@ const Hero = () => {
               {/* Main drone */}
               <div className="absolute w-32 h-32 bg-security-800/50 backdrop-blur-sm rounded-full flex items-center justify-center z-20">
                 <div className="absolute inset-0 border-2 border-security-400/30 rounded-full animate-pulse"></div>
-                <Drone className="h-16 w-16 text-security-400" />
+                <Plane className="h-16 w-16 text-security-400" />
               </div>
 
               {/* Orbiting drones */}
               <div className="absolute w-64 h-64 rounded-full border border-security-700/30 animate-[spin_20s_linear_infinite]">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-security-800/50 backdrop-blur-sm p-2 rounded-full">
-                  <Drone className="h-6 w-6 text-security-500" />
+                  <Plane className="h-6 w-6 text-security-500" />
                 </div>
               </div>
 
               <div className="absolute w-80 h-80 rounded-full border border-security-700/20 animate-[spin_30s_linear_infinite_reverse]">
                 <div className="absolute top-1/2 -right-3 -translate-y-1/2 bg-security-800/50 backdrop-blur-sm p-2 rounded-full">
-                  <Drone className="h-6 w-6 text-security-500" />
+                  <Plane className="h-6 w-6 text-security-500" />
                 </div>
               </div>
 
               <div className="absolute w-96 h-96 rounded-full border border-security-700/10 animate-[spin_40s_linear_infinite]">
                 <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-security-800/50 backdrop-blur-sm p-2 rounded-full">
-                  <Drone className="h-6 w-6 text-security-500" />
+                  <Plane className="h-6 w-6 text-security-500" />
                 </div>
               </div>
 
