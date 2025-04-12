@@ -1,4 +1,3 @@
-
 import { Shield, Mail, Phone, MapPin, Twitter, Linkedin, Facebook } from "lucide-react";
 
 const Footer = () => {
@@ -9,7 +8,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
               <Shield className="h-8 w-8 text-security-500" />
-              <span className="text-xl font-bold">SwarmEye</span>
+              <span className="text-xl font-bold">Sturnus</span>
             </div>
             <p className="text-sm text-muted-foreground mb-6">
               Advanced drone swarm security solutions for comprehensive site protection.
@@ -117,7 +116,7 @@ const Footer = () => {
         
         <div className="border-t border-accent/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} SwarmEye Security. All rights reserved.
+            &copy; {new Date().getFullYear()} Sturnus Security. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-sm text-muted-foreground hover:text-security-500 transition-colors">

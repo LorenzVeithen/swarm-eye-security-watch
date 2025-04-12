@@ -24,6 +24,7 @@ const Hero = () => {
             <p className="text-lg md:text-xl text-gray-300 mb-8">
               Intelligent monitoring and rapid response using cutting-edge drone swarm technology for unmatched site security.
             </p>
+            
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-security-600 hover:bg-security-500 text-white">
                 Request Demo
@@ -33,7 +34,6 @@ const Hero = () => {
               </Button>
             </div>
 
-            {/* Feature badges */}
             <div className="flex flex-wrap gap-4 mt-12">
               <div className="flex items-center bg-secondary/50 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Eye className="h-4 w-4 text-security-400 mr-2" />
@@ -52,13 +52,11 @@ const Hero = () => {
 
           <div className="w-full md:w-1/2 relative">
             <div className="relative w-full h-[400px] flex items-center justify-center">
-              {/* Main drone */}
               <div className="absolute w-32 h-32 bg-security-800/50 backdrop-blur-sm rounded-full flex items-center justify-center z-20">
                 <div className="absolute inset-0 border-2 border-security-400/30 rounded-full animate-pulse"></div>
                 <Plane className="h-16 w-16 text-security-400" />
               </div>
 
-              {/* Orbiting drones */}
               <div className="absolute w-64 h-64 rounded-full border border-security-700/30 animate-[spin_20s_linear_infinite]">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-security-800/50 backdrop-blur-sm p-2 rounded-full">
                   <Plane className="h-6 w-6 text-security-500" />
@@ -77,7 +75,6 @@ const Hero = () => {
                 </div>
               </div>
 
-              {/* Connection lines - animated gradient */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-full h-full bg-[radial-gradient(circle,rgba(33,150,243,0.1)_0%,rgba(0,0,0,0)_70%)]"></div>
               </div>
