@@ -1,3 +1,4 @@
+
 import { Plane, Shield, Eye, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -26,9 +27,14 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-security-600 hover:bg-security-500 text-white">
-                Request Demo
-              </Button>
+              <a 
+                href="mailto:lavv2@cam.ac.uk?subject=STURNUS%20Chat%20Request&body=I'm%20interested%20in%20learning%20more%20about%20STURNUS%20drone%20security%20solutions."
+                className="inline-block"
+              >
+                <Button size="lg" className="bg-security-600 hover:bg-security-500 text-white w-full">
+                  Request a Chat
+                </Button>
+              </a>
               <Button size="lg" variant="outline" className="border-security-500 text-security-400 hover:bg-security-500/10">
                 Learn More
               </Button>
