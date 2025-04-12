@@ -1,8 +1,12 @@
-
 import { Plane, Shield, Eye, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
+  const handleLearnMore = () => {
+    const aboutSection = document.getElementById('about');
+    aboutSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="relative min-h-screen flex items-center bg-security-gradient overflow-hidden pt-20">
       {/* Background elements */}
@@ -35,7 +39,12 @@ const Hero = () => {
                   Request a Chat
                 </Button>
               </a>
-              <Button size="lg" variant="outline" className="border-security-500 text-security-400 hover:bg-security-500/10">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-security-500 text-security-400 hover:bg-security-500/10"
+                onClick={handleLearnMore}
+              >
                 Learn More
               </Button>
             </div>
