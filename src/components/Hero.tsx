@@ -1,5 +1,5 @@
 
-import { Plane, Shield, Eye, Lock } from "lucide-react";
+import { Plane, Network, Code, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -33,15 +33,15 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-1/2 mb-12 md:mb-0">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
-              Advanced <span className="gradient-text">Drone Swarm</span> Security Solutions
+              Hardware-Agnostic <span className="gradient-text">Drone Swarm</span> Technology
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8">
-              Intelligent monitoring and rapid response using cutting-edge drone swarm technology for unmatched site security.
+              Enabling thousands of drones to work together as an intelligent swarm, controlled by a single operator across multiple industries.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="mailto:lavv2@cam.ac.uk?subject=STURNUS%20Chat%20Request&body=I'm%20interested%20in%20learning%20more%20about%20STURNUS%20drone%20security%20solutions."
+                href="mailto:lavv2@cam.ac.uk?subject=STURNUS%20Chat%20Request&body=I'm%20interested%20in%20learning%20more%20about%20STURNUS%20drone%20swarm%20technology."
                 className="inline-block"
               >
                 <Button size="lg" className="bg-sturnus-teal hover:bg-sturnus-teal/90 text-white w-full">
@@ -60,16 +60,16 @@ const Hero = () => {
 
             <div className="flex flex-wrap gap-4 mt-12">
               <div className="flex items-center bg-secondary/50 backdrop-blur-sm px-4 py-2 rounded-full">
-                <Eye className="h-4 w-4 text-sturnus-teal mr-2" />
-                <span className="text-sm">24/7 Monitoring</span>
+                <Code className="h-4 w-4 text-sturnus-teal mr-2" />
+                <span className="text-sm">Hardware-Agnostic</span>
               </div>
               <div className="flex items-center bg-secondary/50 backdrop-blur-sm px-4 py-2 rounded-full">
-                <Lock className="h-4 w-4 text-sturnus-green mr-2" />
-                <span className="text-sm">Rapid Response</span>
+                <Network className="h-4 w-4 text-sturnus-green mr-2" />
+                <span className="text-sm">Swarm Intelligence</span>
               </div>
               <div className="flex items-center bg-secondary/50 backdrop-blur-sm px-4 py-2 rounded-full">
-                <Shield className="h-4 w-4 text-sturnus-yellow mr-2" />
-                <span className="text-sm">AI-Powered</span>
+                <Users className="h-4 w-4 text-sturnus-yellow mr-2" />
+                <span className="text-sm">Single Operator</span>
               </div>
             </div>
           </div>

@@ -1,37 +1,37 @@
 
-import { Radar, Target, Map, Users, Camera, Bell } from "lucide-react";
+import { Radar, Target, Map, Users, Camera, Bell, Tractor, Package, Shield, PlaneTakeoff, Buildings, Microscope } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const serviceItems = [
   {
-    icon: Radar,
-    title: "Perimeter Monitoring",
-    description: "Continuous surveillance of site boundaries with intelligent motion detection to identify potential threats."
+    icon: Shield,
+    title: "Security & Surveillance",
+    description: "Intelligent monitoring of sites with autonomous threat detection and response capabilities."
   },
   {
-    icon: Target,
-    title: "Intruder Tracking",
-    description: "Automated tracking of unauthorized personnel with real-time location data and behavioral analysis."
+    icon: Tractor,
+    title: "Agricultural Management",
+    description: "Precision crop monitoring, automated irrigation analysis, and optimized resource distribution."
   },
   {
-    icon: Map,
-    title: "Aerial Mapping",
-    description: "Comprehensive site mapping and regular updates to identify changes in the environment."
+    icon: Package,
+    title: "Delivery Networks",
+    description: "Coordinated package delivery systems with dynamic route optimization and obstacle avoidance."
   },
   {
-    icon: Users,
-    title: "Crowd Management",
-    description: "Monitor crowds at events for safety concerns, congestion, and potential security risks."
+    icon: Buildings,
+    title: "Urban Planning",
+    description: "Comprehensive urban mapping and infrastructure assessment for smart city development."
   },
   {
-    icon: Camera,
-    title: "Video Surveillance",
-    description: "High-definition video capture with night vision capabilities and cloud-based storage."
+    icon: PlaneTakeoff,
+    title: "Search & Rescue",
+    description: "Wide-area search operations with intelligent pattern recognition and coordination."
   },
   {
-    icon: Bell,
-    title: "Alert System",
-    description: "Immediate notifications to security personnel and automated response protocols."
+    icon: Microscope,
+    title: "Research & Development",
+    description: "Advanced platforms for testing swarm algorithms and multi-agent coordination systems."
   }
 ];
 
@@ -40,9 +40,9 @@ const Services = () => {
     <section id="services" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl font-bold mb-4">Our Security Solutions</h2>
+          <h2 className="text-3xl font-bold mb-4">Applications of Our Swarm Technology</h2>
           <p className="text-muted-foreground">
-            We provide comprehensive drone-based security services using advanced swarm technology for various scenarios and environments.
+            Our hardware-agnostic drone swarm technology can revolutionize operations across multiple industries and use cases.
           </p>
         </div>
 

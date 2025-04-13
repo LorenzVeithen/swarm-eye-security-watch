@@ -1,26 +1,26 @@
 
-import { Check, Plane, Radar, Shield, AlertCircle } from "lucide-react";
+import { Check, Plane, Network, Cpu, Users } from "lucide-react";
 
 const steps = [
   {
-    title: "Deployment",
-    description: "Our drones are deployed in a coordinated swarm pattern, creating an extensive coverage network.",
+    title: "Swarm Integration",
+    description: "Our software connects to various drone models, creating a unified swarm regardless of hardware specifications.",
     icon: Plane
   },
   {
-    title: "Detection",
-    description: "AI-powered computer vision systems identify anomalies and potential security threats in real-time.",
-    icon: Radar
+    title: "Coordination",
+    description: "Advanced algorithms enable drones to communicate and coordinate their actions as a collective intelligence.",
+    icon: Network
   },
   {
-    title: "Response",
-    description: "Drones autonomously respond to threats, tracking movements while alerting security personnel.",
-    icon: AlertCircle
+    title: "Task Allocation",
+    description: "The system dynamically assigns roles to each drone based on capabilities, position, and mission requirements.",
+    icon: Cpu
   },
   {
-    title: "Resolution",
-    description: "Security threats are contained and resolved with coordinated action between drones and ground teams.",
-    icon: Shield
+    title: "Single-Operator Control",
+    description: "One operator manages the entire swarm through an intuitive interface, setting objectives rather than micromanaging.",
+    icon: Users
   }
 ];
 
@@ -38,9 +38,9 @@ const HowItWorks = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl font-bold mb-4">How SwarmEye Works</h2>
+          <h2 className="text-3xl font-bold mb-4">How STURNUS Works</h2>
           <p className="text-muted-foreground">
-            Our drone swarm technology creates an intelligent security network that operates autonomously to detect and respond to threats.
+            Our hardware-agnostic platform transforms individual drones into an intelligent, coordinated swarm that operates with unprecedented efficiency.
           </p>
         </div>
 
@@ -73,11 +73,11 @@ const HowItWorks = () => {
               <h3 className="text-2xl font-bold mb-4">Key Advantages of Our Swarm Technology</h3>
               <ul className="space-y-3">
                 {[
-                  "Continuous 360° surveillance with no blind spots",
-                  "Intelligent tracking that follows threats autonomously",
-                  "Redundant coverage ensures no single point of failure",
-                  "Rapid deployment in emergency situations",
-                  "AI-powered threat detection with minimal false alarms"
+                  "Hardware-agnostic software compatible with various drone models",
+                  "Intelligent coordination between multi-species of drones",
+                  "Single operator can control thousands of drones simultaneously",
+                  "Real-time adaptation to changing environments and conditions",
+                  "Significantly reduced operational costs compared to conventional approaches"
                 ].map((advantage, index) => (
                   <li key={index} className="flex items-start">
                     <div className="mr-3 mt-1">
@@ -90,31 +90,36 @@ const HowItWorks = () => {
             </div>
             <div className="md:w-1/2 md:pl-8">
               <div className="relative h-64 rounded-lg bg-black/50 overflow-hidden">
-                {/* Simulated drone camera feed */}
+                {/* Simulated drone swarm visualization */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-black via-transparent to-black opacity-50"></div>
                 <div className="absolute top-0 left-0 w-full p-2 flex justify-between items-center">
                   <div className="flex items-center">
-                    <div className="h-2 w-2 rounded-full bg-red-500 animate-pulse mr-2"></div>
-                    <span className="text-xs font-mono">LIVE</span>
+                    <div className="h-2 w-2 rounded-full bg-sturnus-teal animate-pulse mr-2"></div>
+                    <span className="text-xs font-mono">SWARM ACTIVE</span>
                   </div>
-                  <span className="text-xs font-mono">DRONE-01 • THERMAL</span>
+                  <span className="text-xs font-mono">DRONES: 238 • ACTIVE: 236</span>
                 </div>
                 <div className="absolute bottom-0 left-0 w-full p-2">
                   <div className="text-xs font-mono flex justify-between">
-                    <span>LAT: 51.507351</span>
-                    <span>LONG: -0.127758</span>
+                    <span>MISSION: AGRICULTURAL SURVEY</span>
+                    <span>EFFICIENCY: 94%</span>
                   </div>
                 </div>
                 
                 {/* Grid overlay */}
                 <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,transparent,transparent_19px,rgba(90,170,142,0.1)_20px),repeating-linear-gradient(90deg,transparent,transparent_19px,rgba(90,170,142,0.1)_20px)]"></div>
                 
-                {/* Simulated person detection */}
-                <div className="absolute left-[40%] top-[30%] w-16 h-24 border-2 border-red-500 animate-pulse">
-                  <div className="absolute -top-6 left-0 bg-red-500 text-white text-xs font-mono px-1">
-                    INTRUDER
+                {/* Simulated drone indicators */}
+                {Array.from({ length: 20 }).map((_, i) => (
+                  <div key={i} 
+                       className="absolute w-2 h-2 rounded-full bg-sturnus-teal/80" 
+                       style={{ 
+                         left: `${Math.random() * 80 + 10}%`, 
+                         top: `${Math.random() * 80 + 10}%`,
+                         opacity: Math.random() * 0.5 + 0.5
+                       }}>
                   </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>

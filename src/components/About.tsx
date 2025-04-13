@@ -1,5 +1,5 @@
 
-import { CheckCircle, Award, Users, Shield } from "lucide-react";
+import { CheckCircle, Award, Users, Network, Code, Cpu } from "lucide-react";
 
 const About = () => {
   return (
@@ -7,12 +7,12 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold mb-6">About SwarmEye Security</h2>
+            <h2 className="text-3xl font-bold mb-6">About STURNUS</h2>
             <p className="text-muted-foreground mb-6">
-              SwarmEye Security is a leading provider of advanced drone-based security solutions. Founded by experts in robotics, artificial intelligence, and security operations, we're revolutionizing how sites are protected.
+              STURNUS is a leading innovator in hardware-agnostic drone swarm technology. Founded by experts in robotics, artificial intelligence, and aerospace engineering from the University of Cambridge, we're revolutionizing how drone fleets operate.
             </p>
             <p className="text-muted-foreground mb-8">
-              Our proprietary swarm technology enables multiple drones to work in concert, creating an intelligent security net that can monitor, detect, and respond to threats with unprecedented efficiency and reliability.
+              Today, 2.8 million drones are being used across industries ranging from agriculture and delivery to security and defense. However, the vast majority operate independently or in limited fleets rather than in large, intelligent swarms. At STURNUS, we're addressing this missed opportunity.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
@@ -21,8 +21,8 @@ const About = () => {
                   <CheckCircle className="h-6 w-6 text-sturnus-teal" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Military-Grade Technology</h3>
-                  <p className="text-sm text-muted-foreground">Utilizing systems developed for defense applications</p>
+                  <h3 className="font-medium">Hardware-Agnostic Platform</h3>
+                  <p className="text-sm text-muted-foreground">Compatible with various drone models and manufacturers</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -30,8 +30,8 @@ const About = () => {
                   <CheckCircle className="h-6 w-6 text-sturnus-teal" />
                 </div>
                 <div>
-                  <h3 className="font-medium">AI-Powered Analytics</h3>
-                  <p className="text-sm text-muted-foreground">Advanced threat detection with minimal false alarms</p>
+                  <h3 className="font-medium">Swarm Intelligence</h3>
+                  <p className="text-sm text-muted-foreground">Dynamic adaptation to complex environments</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -39,8 +39,8 @@ const About = () => {
                   <CheckCircle className="h-6 w-6 text-sturnus-teal" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Rapid Deployment</h3>
-                  <p className="text-sm text-muted-foreground">Operational within hours, not days or weeks</p>
+                  <h3 className="font-medium">Single-Operator Control</h3>
+                  <p className="text-sm text-muted-foreground">Manage thousands of drones efficiently</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -48,8 +48,8 @@ const About = () => {
                   <CheckCircle className="h-6 w-6 text-sturnus-teal" />
                 </div>
                 <div>
-                  <h3 className="font-medium">24/7 Support</h3>
-                  <p className="text-sm text-muted-foreground">Dedicated team for continuous monitoring</p>
+                  <h3 className="font-medium">Multi-Species Integration</h3>
+                  <p className="text-sm text-muted-foreground">Coordinate different drone types in one system</p>
                 </div>
               </div>
             </div>
@@ -57,17 +57,17 @@ const About = () => {
           
           <div className="relative">
             <div className="bg-secondary/40 backdrop-blur-sm border border-accent/20 rounded-lg p-8">
-              <h3 className="text-2xl font-bold mb-6">Why Choose Us</h3>
+              <h3 className="text-2xl font-bold mb-6">Our Vision</h3>
               
               <div className="space-y-8">
                 <div className="flex items-start">
                   <div className="mr-4 bg-sturnus-teal/10 p-3 rounded-lg">
-                    <Award className="h-6 w-6 text-sturnus-teal" />
+                    <Network className="h-6 w-6 text-sturnus-teal" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium mb-2">Industry Leading Expertise</h4>
+                    <h4 className="text-lg font-medium mb-2">Swarm-Like Behavior</h4>
                     <p className="text-muted-foreground">
-                      Our team combines decades of experience in security, robotics, and artificial intelligence.
+                      Enabling multi-species of drones to dynamically adapt to complex environments through sophisticated swarm intelligence.
                     </p>
                   </div>
                 </div>
@@ -77,21 +77,21 @@ const About = () => {
                     <Users className="h-6 w-6 text-sturnus-green" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium mb-2">Trusted By Industry Leaders</h4>
+                    <h4 className="text-lg font-medium mb-2">Enhanced Efficiency</h4>
                     <p className="text-muted-foreground">
-                      Securing events, industrial sites, and critical infrastructure for top companies worldwide.
+                      Dramatically improving cost-effectiveness by allowing a single operator to control thousands of coordinated drones.
                     </p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <div className="mr-4 bg-sturnus-yellow/10 p-3 rounded-lg">
-                    <Shield className="h-6 w-6 text-sturnus-yellow" />
+                    <Cpu className="h-6 w-6 text-sturnus-yellow" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium mb-2">Comprehensive Security</h4>
+                    <h4 className="text-lg font-medium mb-2">Industry Transformation</h4>
                     <p className="text-muted-foreground">
-                      Beyond surveillance—our systems actively respond to and neutralize security threats.
+                      Revolutionizing how drones are used across industries - from agriculture and delivery to security and urban planning.
                     </p>
                   </div>
                 </div>
