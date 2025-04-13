@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Menu, X, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -23,17 +24,17 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center space-x-2">
-          <Shield className="h-8 w-8 text-security-500" />
-          <span className="text-xl font-bold">STURNUS</span>
+          <Shield className="h-8 w-8 text-sturnus-teal" />
+          <span className="text-xl font-bold gradient-text">STURNUS</span>
         </a>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#services" className="text-sm hover:text-security-400 transition-colors">Services</a>
-          <a href="#how-it-works" className="text-sm hover:text-security-400 transition-colors">How It Works</a>
-          <a href="#about" className="text-sm hover:text-security-400 transition-colors">About</a>
-          <a href="#contact" className="text-sm hover:text-security-400 transition-colors">Contact</a>
-          <Button size="sm" className="bg-security-600 hover:bg-security-500">
+          <a href="#services" className="text-sm hover:text-sturnus-teal transition-colors">Services</a>
+          <a href="#how-it-works" className="text-sm hover:text-sturnus-green transition-colors">How It Works</a>
+          <a href="#about" className="text-sm hover:text-sturnus-yellow transition-colors">About</a>
+          <a href="#contact" className="text-sm hover:text-sturnus-teal transition-colors">Contact</a>
+          <Button size="sm" className="bg-sturnus-teal hover:bg-sturnus-teal/90">
             Get Started
           </Button>
         </div>
@@ -50,33 +51,33 @@ const Navbar = () => {
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <a 
               href="#services" 
-              className="text-sm py-2 hover:text-security-400 transition-colors"
+              className="text-sm py-2 hover:text-sturnus-teal transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Services
             </a>
             <a 
               href="#how-it-works" 
-              className="text-sm py-2 hover:text-security-400 transition-colors"
+              className="text-sm py-2 hover:text-sturnus-green transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               How It Works
             </a>
             <a 
               href="#about" 
-              className="text-sm py-2 hover:text-security-400 transition-colors"
+              className="text-sm py-2 hover:text-sturnus-teal transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </a>
             <a 
               href="#contact" 
-              className="text-sm py-2 hover:text-security-400 transition-colors"
+              className="text-sm py-2 hover:text-sturnus-yellow transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
             </a>
-            <Button className="w-full bg-security-600 hover:bg-security-500">
+            <Button className="w-full bg-sturnus-teal hover:bg-sturnus-teal/90">
               Get Started
             </Button>
           </div>

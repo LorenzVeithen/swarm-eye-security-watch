@@ -21,12 +21,12 @@ const Team = () => {
             <CardContent className="p-0">
               <div className="p-6">
                 <div className="flex items-center mb-4">
-                  <Avatar className="h-16 w-16 mr-4 border-2 border-security-500">
-                    <AvatarFallback className="bg-security-700 text-security-100">LC</AvatarFallback>
+                  <Avatar className="h-16 w-16 mr-4 border-2 border-sturnus-teal">
+                    <AvatarFallback className="bg-sturnus-teal/20 text-sturnus-teal">LC</AvatarFallback>
                   </Avatar>
                   <div>
                     <h3 className="text-xl font-bold">Lorenz</h3>
-                    <p className="text-security-400">CEO</p>
+                    <p className="text-sturnus-teal">CEO</p>
                   </div>
                 </div>
                 
@@ -37,21 +37,21 @@ const Team = () => {
                 
                 <div className="space-y-2">
                   <div className="flex items-center">
-                    <GraduationCap className="h-4 w-4 text-security-400 mr-2" />
+                    <GraduationCap className="h-4 w-4 text-sturnus-teal mr-2" />
                     <span className="text-sm">University of Cambridge</span>
                   </div>
                   <div className="flex items-center">
-                    <Briefcase className="h-4 w-4 text-security-400 mr-2" />
+                    <Briefcase className="h-4 w-4 text-sturnus-green mr-2" />
                     <span className="text-sm">Aerospace Engineering</span>
                   </div>
                   <div className="flex items-center">
-                    <Award className="h-4 w-4 text-security-400 mr-2" />
+                    <Award className="h-4 w-4 text-sturnus-yellow mr-2" />
                     <span className="text-sm">Projects with DLR, ESA, NASA, CERN</span>
                   </div>
                 </div>
               </div>
               
-              <div className="h-2 bg-gradient-to-r from-security-700 to-security-500"></div>
+              <div className="h-2 bg-gradient-to-r from-sturnus-teal to-sturnus-yellow"></div>
             </CardContent>
           </Card>
 
@@ -60,12 +60,12 @@ const Team = () => {
             <CardContent className="p-0">
               <div className="p-6">
                 <div className="flex items-center mb-4">
-                  <Avatar className="h-16 w-16 mr-4 border-2 border-security-500">
-                    <AvatarFallback className="bg-security-700 text-security-100">KJ</AvatarFallback>
+                  <Avatar className="h-16 w-16 mr-4 border-2 border-sturnus-green">
+                    <AvatarFallback className="bg-sturnus-green/20 text-sturnus-green">KJ</AvatarFallback>
                   </Avatar>
                   <div>
                     <h3 className="text-xl font-bold">Kai</h3>
-                    <p className="text-security-400">CTO</p>
+                    <p className="text-sturnus-green">CTO</p>
                   </div>
                 </div>
                 
@@ -76,21 +76,21 @@ const Team = () => {
                 
                 <div className="space-y-2">
                   <div className="flex items-center">
-                    <GraduationCap className="h-4 w-4 text-security-400 mr-2" />
+                    <GraduationCap className="h-4 w-4 text-sturnus-teal mr-2" />
                     <span className="text-sm">Cambridge Postdoctoral Researcher</span>
                   </div>
                   <div className="flex items-center">
-                    <Code className="h-4 w-4 text-security-400 mr-2" />
+                    <Code className="h-4 w-4 text-sturnus-green mr-2" />
                     <span className="text-sm">Distributed Systems Expert</span>
                   </div>
                   <div className="flex items-center">
-                    <User className="h-4 w-4 text-security-400 mr-2" />
+                    <User className="h-4 w-4 text-sturnus-yellow mr-2" />
                     <span className="text-sm">10+ Years Experience</span>
                   </div>
                 </div>
               </div>
               
-              <div className="h-2 bg-gradient-to-r from-security-500 to-security-700"></div>
+              <div className="h-2 bg-gradient-to-r from-sturnus-green to-sturnus-yellow"></div>
             </CardContent>
           </Card>
         </div>

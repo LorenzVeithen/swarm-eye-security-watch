@@ -64,6 +64,12 @@ export default {
 					700: '#1976D2',
 					800: '#1565C0',
 					900: '#0D47A1',
+				},
+				sturnus: {
+					teal: '#5AAA8E',
+					green: '#7DAA64',
+					yellow: '#CDA43B',
+					dark: '#1A1A1A',
 				}
 			},
 			borderRadius: {
