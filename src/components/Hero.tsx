@@ -1,3 +1,4 @@
+
 import { Plane, Shield, Eye, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -8,15 +9,23 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center bg-security-gradient overflow-hidden pt-20">
-      {/* Background elements */}
+    <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
+      {/* Video Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-40 left-10 w-20 h-20 bg-security-500/10 rounded-full filter blur-xl"></div>
-        <div className="absolute bottom-40 right-10 w-32 h-32 bg-security-700/10 rounded-full filter blur-xl"></div>
-        <div className="absolute top-1/4 right-1/3 w-24 h-24 bg-blue-500/5 rounded-full filter blur-xl"></div>
+        <video 
+          className="absolute w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/placeholder.svg" // Placeholder image while video loads
+        >
+          <source src="/drone-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         
-        {/* Grid pattern overlay */}
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiMxNTY1QzAiIGZpbGwtb3BhY2l0eT0iLjAzIiBkPSJNMzAgMGg2MHY2MEgzMHoiLz48cGF0aCBmaWxsPSIjMTU2NUMwIiBmaWxsLW9wYWNpdHk9Ii4wMyIgZD0iTTAgMGg2MHY2MEgweiIvPjwvZz48L3N2Zz4=')] opacity-30"></div>
+        {/* Overlay to ensure text readability */}
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
       {/* Content */}
