@@ -49,7 +49,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-security-gradient relative overflow-hidden">
+    <section id="contact" className="py-24 bg-sturnus-dark/90 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black to-transparent"></div>
@@ -67,8 +67,8 @@ const ContactForm = () => {
         <div className="max-w-xl mx-auto bg-secondary/40 backdrop-blur-sm border border-accent/20 rounded-lg p-8">
           {isSubmitted ? (
             <div className="text-center py-8">
-              <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Check className="h-8 w-8 text-green-500" />
+              <div className="w-16 h-16 bg-sturnus-teal/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Check className="h-8 w-8 text-sturnus-teal" />
               </div>
               <h3 className="text-xl font-bold mb-2">Message Sent!</h3>
               <p className="text-muted-foreground">
@@ -133,7 +133,7 @@ const ContactForm = () => {
               
               <Button 
                 type="submit" 
-                className="w-full bg-security-600 hover:bg-security-500"
+                className="w-full bg-sturnus-teal hover:bg-sturnus-teal/90"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (

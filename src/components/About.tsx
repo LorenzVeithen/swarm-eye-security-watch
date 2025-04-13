@@ -18,7 +18,7 @@ const About = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
               <div className="flex items-start">
                 <div className="mr-4">
-                  <CheckCircle className="h-6 w-6 text-security-500" />
+                  <CheckCircle className="h-6 w-6 text-sturnus-teal" />
                 </div>
                 <div>
                   <h3 className="font-medium">Military-Grade Technology</h3>
@@ -27,7 +27,7 @@ const About = () => {
               </div>
               <div className="flex items-start">
                 <div className="mr-4">
-                  <CheckCircle className="h-6 w-6 text-security-500" />
+                  <CheckCircle className="h-6 w-6 text-sturnus-teal" />
                 </div>
                 <div>
                   <h3 className="font-medium">AI-Powered Analytics</h3>
@@ -36,7 +36,7 @@ const About = () => {
               </div>
               <div className="flex items-start">
                 <div className="mr-4">
-                  <CheckCircle className="h-6 w-6 text-security-500" />
+                  <CheckCircle className="h-6 w-6 text-sturnus-teal" />
                 </div>
                 <div>
                   <h3 className="font-medium">Rapid Deployment</h3>
@@ -45,7 +45,7 @@ const About = () => {
               </div>
               <div className="flex items-start">
                 <div className="mr-4">
-                  <CheckCircle className="h-6 w-6 text-security-500" />
+                  <CheckCircle className="h-6 w-6 text-sturnus-teal" />
                 </div>
                 <div>
                   <h3 className="font-medium">24/7 Support</h3>
@@ -61,8 +61,8 @@ const About = () => {
               
               <div className="space-y-8">
                 <div className="flex items-start">
-                  <div className="mr-4 bg-security-500/10 p-3 rounded-lg">
-                    <Award className="h-6 w-6 text-security-500" />
+                  <div className="mr-4 bg-sturnus-teal/10 p-3 rounded-lg">
+                    <Award className="h-6 w-6 text-sturnus-teal" />
                   </div>
                   <div>
                     <h4 className="text-lg font-medium mb-2">Industry Leading Expertise</h4>
@@ -73,8 +73,8 @@ const About = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="mr-4 bg-security-500/10 p-3 rounded-lg">
-                    <Users className="h-6 w-6 text-security-500" />
+                  <div className="mr-4 bg-sturnus-green/10 p-3 rounded-lg">
+                    <Users className="h-6 w-6 text-sturnus-green" />
                   </div>
                   <div>
                     <h4 className="text-lg font-medium mb-2">Trusted By Industry Leaders</h4>
@@ -85,8 +85,8 @@ const About = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="mr-4 bg-security-500/10 p-3 rounded-lg">
-                    <Shield className="h-6 w-6 text-security-500" />
+                  <div className="mr-4 bg-sturnus-yellow/10 p-3 rounded-lg">
+                    <Shield className="h-6 w-6 text-sturnus-yellow" />
                   </div>
                   <div>
                     <h4 className="text-lg font-medium mb-2">Comprehensive Security</h4>
@@ -98,8 +98,8 @@ const About = () => {
               </div>
               
               {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-security-500/30 rounded-tr-lg"></div>
-              <div className="absolute -bottom-4 -left-4 w-24 h-24 border-b-2 border-l-2 border-security-500/30 rounded-bl-lg"></div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-sturnus-teal/30 rounded-tr-lg"></div>
+              <div className="absolute -bottom-4 -left-4 w-24 h-24 border-b-2 border-l-2 border-sturnus-yellow/30 rounded-bl-lg"></div>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-import { Menu, X, Shield } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -24,7 +24,6 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center space-x-2">
-          <Shield className="h-8 w-8 text-sturnus-teal" />
           <span className="text-xl font-bold gradient-text">STURNUS</span>
         </a>
 
@@ -32,7 +31,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-8">
           <a href="#services" className="text-sm hover:text-sturnus-teal transition-colors">Services</a>
           <a href="#how-it-works" className="text-sm hover:text-sturnus-green transition-colors">How It Works</a>
-          <a href="#about" className="text-sm hover:text-sturnus-yellow transition-colors">About</a>
+          <a href="#about" className="text-sm hover:text-sturnus-teal transition-colors">About</a>
           <a href="#contact" className="text-sm hover:text-sturnus-teal transition-colors">Contact</a>
           <Button size="sm" className="bg-sturnus-teal hover:bg-sturnus-teal/90">
             Get Started

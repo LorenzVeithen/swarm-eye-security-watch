@@ -48,10 +48,10 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {serviceItems.map((service, index) => (
-            <Card key={index} className="bg-card-gradient border border-accent/60 hover:border-security-600/40 transition-all duration-300 overflow-hidden group">
+            <Card key={index} className="bg-card-gradient border border-accent/60 hover:border-sturnus-teal/40 transition-all duration-300 overflow-hidden group">
               <CardHeader className="pb-2">
-                <div className="w-12 h-12 rounded-full bg-security-500/10 flex items-center justify-center mb-4 group-hover:bg-security-500/20 transition-colors">
-                  <service.icon className="h-6 w-6 text-security-500" />
+                <div className="w-12 h-12 rounded-full bg-sturnus-teal/10 flex items-center justify-center mb-4 group-hover:bg-sturnus-teal/20 transition-colors">
+                  <service.icon className="h-6 w-6 text-sturnus-teal" />
                 </div>
                 <CardTitle>{service.title}</CardTitle>
               </CardHeader>

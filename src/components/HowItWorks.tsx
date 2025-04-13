@@ -26,14 +26,14 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="py-24 bg-security-gradient relative overflow-hidden">
+    <section id="how-it-works" className="py-24 bg-sturnus-dark/90 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black to-transparent"></div>
         <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-black to-transparent"></div>
         
         {/* Grid pattern overlay */}
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiMxNTY1QzAiIGZpbGwtb3BhY2l0eT0iLjAzIiBkPSJNMzAgMGg2MHY2MEgzMHoiLz48cGF0aCBmaWxsPSIjMTU2NUMwIiBmaWxsLW9wYWNpdHk9Ii4wMyIgZD0iTTAgMGg2MHY2MEgweiIvPjwvZz48L3N2Zz4=')] opacity-30"></div>
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiM1QUE3OEUiIGZpbGwtb3BhY2l0eT0iLjAzIiBkPSJNMzAgMGg2MHY2MEgzMHoiLz48cGF0aCBmaWxsPSIjNUFBNzhFIiBmaWxsLW9wYWNpdHk9Ii4wMyIgZD0iTTAgMGg2MHY2MEgweiIvPjwvZz48L3N2Zz4=')] opacity-30"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
@@ -49,17 +49,17 @@ const HowItWorks = () => {
             <div key={index} className="relative">
               {/* Connection line */}
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-12 left-[calc(100%_-_12px)] w-full h-[2px] bg-gradient-to-r from-security-500 to-transparent z-0"></div>
+                <div className="hidden lg:block absolute top-12 left-[calc(100%_-_12px)] w-full h-[2px] bg-gradient-to-r from-sturnus-teal to-transparent z-0"></div>
               )}
               
               <div className="bg-secondary/40 backdrop-blur-sm border border-accent/20 rounded-lg p-6 relative z-10 h-full transition-transform hover:-translate-y-2 duration-300">
-                <div className="w-16 h-16 rounded-full bg-security-500/10 flex items-center justify-center mb-4">
-                  <step.icon className="h-8 w-8 text-security-500" />
+                <div className="w-16 h-16 rounded-full bg-sturnus-teal/10 flex items-center justify-center mb-4">
+                  <step.icon className="h-8 w-8 text-sturnus-teal" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
                 <p className="text-muted-foreground">{step.description}</p>
                 
-                <div className="w-8 h-8 rounded-full bg-security-600 flex items-center justify-center absolute -top-4 -left-4">
+                <div className="w-8 h-8 rounded-full bg-sturnus-green flex items-center justify-center absolute -top-4 -left-4">
                   <span className="text-white font-medium">{index + 1}</span>
                 </div>
               </div>
@@ -81,7 +81,7 @@ const HowItWorks = () => {
                 ].map((advantage, index) => (
                   <li key={index} className="flex items-start">
                     <div className="mr-3 mt-1">
-                      <Check className="h-5 w-5 text-security-500" />
+                      <Check className="h-5 w-5 text-sturnus-teal" />
                     </div>
                     <span>{advantage}</span>
                   </li>
@@ -107,7 +107,7 @@ const HowItWorks = () => {
                 </div>
                 
                 {/* Grid overlay */}
-                <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,transparent,transparent_19px,rgba(33,150,243,0.1)_20px),repeating-linear-gradient(90deg,transparent,transparent_19px,rgba(33,150,243,0.1)_20px)]"></div>
+                <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,transparent,transparent_19px,rgba(90,170,142,0.1)_20px),repeating-linear-gradient(90deg,transparent,transparent_19px,rgba(90,170,142,0.1)_20px)]"></div>
                 
                 {/* Simulated person detection */}
                 <div className="absolute left-[40%] top-[30%] w-16 h-24 border-2 border-red-500 animate-pulse">
