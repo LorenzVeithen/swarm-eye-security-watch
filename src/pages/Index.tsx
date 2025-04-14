@@ -1,7 +1,6 @@
 
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
 import HowItWorks from "@/components/HowItWorks";
 import About from "@/components/About";
 import Team from "@/components/Team";
@@ -14,7 +13,6 @@ const Index = () => {
       <Navbar />
       <main className="flex-grow">
         <Hero />
-        <Services />
         <HowItWorks />
         <About />
         <Team />
