@@ -32,6 +32,7 @@ const Navbar = () => {
           <a href="#about" className="text-sm hover:text-sturnus-teal transition-colors">About</a>
           <a href="#contact" className="text-sm hover:text-sturnus-teal transition-colors">Contact</a>
           <a href="/blog" className="text-sm hover:text-sturnus-teal transition-colors">Blog</a>
+          <a href="/careers" className="text-sm hover:text-sturnus-teal transition-colors">Careers</a>
           <Button size="sm" className="bg-sturnus-teal hover:bg-sturnus-teal/90">
             Get Started
           </Button>
@@ -74,6 +75,13 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Blog
+            </a>
+            <a 
+              href="/careers" 
+              className="text-sm py-2 hover:text-sturnus-teal transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Careers
             </a>
             <Button className="w-full bg-sturnus-teal hover:bg-sturnus-teal/90">
               Get Started
