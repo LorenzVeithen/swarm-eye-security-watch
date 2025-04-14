@@ -1,5 +1,4 @@
-
-import { Plane, Network, Code, Users } from "lucide-react";
+import { Plane } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -18,7 +17,7 @@ const Hero = () => {
           muted
           loop
           playsInline
-          poster="/placeholder.svg" // Placeholder image while video loads
+          poster="/placeholder.svg"
         >
           <source src="/drone-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -56,21 +55,6 @@ const Hero = () => {
               >
                 Learn More
               </Button>
-            </div>
-
-            <div className="flex flex-wrap gap-4 mt-12">
-              <div className="flex items-center bg-secondary/50 backdrop-blur-sm px-4 py-2 rounded-full">
-                <Code className="h-4 w-4 text-sturnus-teal mr-2" />
-                <span className="text-sm">Hardware-Agnostic</span>
-              </div>
-              <div className="flex items-center bg-secondary/50 backdrop-blur-sm px-4 py-2 rounded-full">
-                <Network className="h-4 w-4 text-sturnus-green mr-2" />
-                <span className="text-sm">Swarm Intelligence</span>
-              </div>
-              <div className="flex items-center bg-secondary/50 backdrop-blur-sm px-4 py-2 rounded-full">
-                <Users className="h-4 w-4 text-sturnus-yellow mr-2" />
-                <span className="text-sm">Single Operator</span>
-              </div>
             </div>
           </div>
 
