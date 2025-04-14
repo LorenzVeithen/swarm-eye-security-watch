@@ -1,5 +1,5 @@
 
-import { Radar, Target, Map, Users, Camera, Bell, Tractor, Package, Shield, PlaneTakeoff, Buildings, Microscope } from "lucide-react";
+import { Radar, Target, Map, Users, Camera, Bell, Tractor, Package, Shield, PlaneTakeoff, Building, Microscope } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const serviceItems = [
@@ -19,7 +19,7 @@ const serviceItems = [
     description: "Coordinated package delivery systems with dynamic route optimization and obstacle avoidance."
   },
   {
-    icon: Buildings,
+    icon: Building,
     title: "Urban Planning",
     description: "Comprehensive urban mapping and infrastructure assessment for smart city development."
   },
