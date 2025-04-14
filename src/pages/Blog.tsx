@@ -3,6 +3,7 @@ import { Calendar, User } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 
 // This would typically come from a database
 const blogPosts = [
@@ -60,9 +61,12 @@ const Blog = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">{post.excerpt}</p>
-                  <button className="text-sturnus-teal hover:text-sturnus-teal/90 font-medium mt-4">
+                  <Link 
+                    to={`/blog/${post.id}`} 
+                    className="inline-block text-sturnus-teal hover:text-sturnus-teal/90 font-medium mt-4"
+                  >
                     Read more →
-                  </button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}

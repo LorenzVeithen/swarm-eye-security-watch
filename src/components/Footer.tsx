@@ -1,4 +1,5 @@
-import { Shield, Mail, Phone, MapPin, Twitter, Linkedin, Facebook } from "lucide-react";
+
+import { Shield, Mail, MapPin, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -14,14 +15,8 @@ const Footer = () => {
               Advanced drone swarm security solutions for comprehensive site protection.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-security-500 transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-security-500 transition-colors">
+              <a href="https://www.linkedin.com/company/sturn-us" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-security-500 transition-colors">
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-security-500 transition-colors">
-                <Facebook className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -76,7 +71,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-security-500 transition-colors">
+                <a href="/blog" className="text-sm text-muted-foreground hover:text-security-500 transition-colors">
                   Blog
                 </a>
               </li>
@@ -98,16 +93,9 @@ const Footer = () => {
                 </span>
               </li>
               <li className="flex items-start">
-                <Phone className="h-5 w-5 text-security-500 mr-2 shrink-0" />
-                <span className="text-sm text-muted-foreground">
-                  +1 (555) 123-4567
-                </span>
-              </li>
-              <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-security-500 mr-2 shrink-0" />
                 <span className="text-sm text-muted-foreground">
-                  123 Security Ave, Suite 400<br />
-                  San Francisco, CA 94103
+                  Cambridge, UK
                 </span>
               </li>
             </ul>
