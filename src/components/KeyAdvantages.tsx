@@ -1,47 +1,37 @@
 
-import { Shield, Zap, Navigation, Users, Database, Eye, Lock, Cpu } from "lucide-react";
+import { Calendar, Clock, Users, Sun, BellRing, Target } from "lucide-react";
 import DroneIconNew from "./DroneIconNew";
 
 const advantages = [
   {
-    icon: Shield,
-    title: "Comprehensive Protection",
-    description: "Our swarm technology provides unprecedented coverage for monitoring and securing critical infrastructure."
+    icon: Calendar,
+    title: "Early-stage swarm of three drones",
+    description: "Eventually scaling to 20+ drones for future events"
   },
   {
-    icon: Zap,
-    title: "Real-time Response",
-    description: "Instant detection and rapid response to security threats through coordinated drone swarm action."
-  },
-  {
-    icon: Navigation,
-    title: "Autonomous Navigation",
-    description: "Advanced AI algorithms enable drones to navigate complex environments without human guidance."
+    icon: Clock,
+    title: "Uninterrupted aerial vigilance",
+    description: "Real-time security incident detection around the clock"
   },
   {
     icon: Users,
-    title: "Single-Operator Control",
-    description: "One operator can manage hundreds of drones simultaneously through our intuitive control interface."
+    title: "Effortless control",
+    description: "A single operator manages the entire swarm"
   },
   {
-    icon: Database,
-    title: "Data Aggregation",
-    description: "Seamless collection and analysis of multi-sensor data across the entire swarm."
+    icon: Sun,
+    title: "Day-and-night intrusion detection",
+    description: "24/7 monitoring in all lighting conditions"
   },
   {
-    icon: Eye,
-    title: "Enhanced Surveillance",
-    description: "Cover large areas with persistent monitoring capabilities without fatigue or distraction."
+    icon: BellRing,
+    title: "Direct notification of relevant staff",
+    description: "Faster communication for a faster response"
   },
   {
-    icon: Lock,
-    title: "Secure Communications",
-    description: "Encrypted mesh network ensures reliable and secure communications between swarm units."
-  },
-  {
-    icon: Cpu,
-    title: "Edge Processing",
-    description: "On-board AI processing reduces latency and enables operation in low-bandwidth environments."
+    icon: Target,
+    title: "Target tracking",
+    description: "Once an intruder is identified, a single drone follows them until security intervenes"
   }
 ];
 

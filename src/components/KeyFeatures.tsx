@@ -22,6 +22,26 @@ const features = [
     icon: Users,
     title: "Single-Operator Control",
     description: "One operator can manage hundreds of drones simultaneously through our intuitive control interface."
+  },
+  {
+    icon: Database,
+    title: "Data Aggregation",
+    description: "Seamless collection and analysis of multi-sensor data across the entire swarm."
+  },
+  {
+    icon: Eye,
+    title: "Enhanced Surveillance",
+    description: "Cover large areas with persistent monitoring capabilities without fatigue or distraction."
+  },
+  {
+    icon: Lock,
+    title: "Secure Communications",
+    description: "Encrypted mesh network ensures reliable and secure communications between swarm units."
+  },
+  {
+    icon: Cpu,
+    title: "Edge Processing",
+    description: "On-board AI processing reduces latency and enables operation in low-bandwidth environments."
   }
 ];
 
