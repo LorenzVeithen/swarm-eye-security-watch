@@ -48,7 +48,7 @@ const KeyAdvantages = () => {
   return (
     <section id="key-advantages" className="py-24 bg-secondary/50 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex flex-col items-center md:flex-row gap-8">
           <div className="w-full md:w-1/2">
             <h2 className="text-3xl font-bold mb-8">Key Advantages</h2>
             
@@ -67,8 +67,8 @@ const KeyAdvantages = () => {
             </div>
           </div>
           
-          <div className="w-full md:w-1/2">
-            <div className="rounded-lg overflow-hidden shadow-lg h-full">
+          <div className="w-full md:w-1/2 flex justify-center">
+            <div className="rounded-lg overflow-hidden shadow-lg max-w-md">
               <div className="relative aspect-video">
                 <video 
                   className="w-full h-full object-cover"

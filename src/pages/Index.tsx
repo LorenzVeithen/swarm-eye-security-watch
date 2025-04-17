@@ -2,7 +2,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import KeyFeatures from "@/components/KeyFeatures";
 import KeyAdvantages from "@/components/KeyAdvantages";
 import Team from "@/components/Team";
 import ContactForm from "@/components/ContactForm";
@@ -14,7 +13,6 @@ const Index = () => {
       <Navbar />
       <main className="flex-grow">
         <Hero />
-        <KeyFeatures />
         <KeyAdvantages />
         <About />
         <Team />
