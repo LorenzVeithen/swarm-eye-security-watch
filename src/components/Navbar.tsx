@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -49,16 +48,10 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
           <button 
-            onClick={() => scrollToSection('key-features')} 
-            className="text-sm hover:text-sturnus-green transition-colors"
-          >
-            Features
-          </button>
-          <button 
             onClick={() => scrollToSection('key-advantages')} 
             className="text-sm hover:text-sturnus-green transition-colors"
           >
-            Advantages
+            Features
           </button>
           <button 
             onClick={() => scrollToSection('about')} 
@@ -73,7 +66,6 @@ const Navbar = () => {
             Contact
           </button>
           <Link to="/blog" className="text-sm hover:text-sturnus-teal transition-colors">Blog</Link>
-          {/* Careers link removed as requested */}
         </div>
 
         {/* Mobile Menu Button */}
@@ -87,16 +79,10 @@ const Navbar = () => {
         <div className="md:hidden absolute top-full left-0 w-full bg-secondary/95 backdrop-blur-md shadow-lg animate-fade-in">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <button 
-              onClick={() => scrollToSection('key-features')} 
-              className="text-sm py-2 hover:text-sturnus-green transition-colors"
-            >
-              Features
-            </button>
-            <button 
               onClick={() => scrollToSection('key-advantages')} 
               className="text-sm py-2 hover:text-sturnus-green transition-colors"
             >
-              Advantages
+              Features
             </button>
             <button 
               onClick={() => scrollToSection('about')} 
@@ -117,7 +103,6 @@ const Navbar = () => {
             >
               Blog
             </Link>
-            {/* Careers link removed */}
           </div>
         </div>
       )}
