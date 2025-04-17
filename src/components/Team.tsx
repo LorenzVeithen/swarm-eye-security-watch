@@ -1,15 +1,12 @@
-
-import { User, Briefcase, Award, Code, GraduationCap, Linkedin } from "lucide-react";
+import { User, Briefcase, Award, Code, GraduationCap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
-
 const Team = () => {
   return <section id="team" className="bg-secondary/20 py-[20px]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Our Team</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto py-[20px]">
             Sturnus is a startup from the University of Cambridge, building at the forefront of event security
             innovation by bringing deep expertise in aerospace engineering, AI, and autonomous systems.
           </p>
@@ -49,17 +46,6 @@ const Team = () => {
                     <span className="text-sm">Projects with DLR, ESA, NASA, CERN</span>
                   </div>
                 </div>
-
-                <div className="mt-4">
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
-                    onClick={() => window.open('https://www.linkedin.com/in/lorenz-veithen/', '_blank')}
-                    className="flex items-center gap-2"
-                  >
-                    <Linkedin className="h-4 w-4" /> LinkedIn
-                  </Button>
-                </div>
               </div>
               
               <div className="h-2 bg-gradient-to-r from-sturnus-teal to-sturnus-yellow"></div>
@@ -98,17 +84,6 @@ const Team = () => {
                     <User className="h-4 w-4 text-sturnus-yellow mr-2" />
                     <span className="text-sm">10+ Years Experience</span>
                   </div>
-                </div>
-
-                <div className="mt-4">
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
-                    onClick={() => window.open('https://www.linkedin.com/in/kai-fung-chu-87917315a/', '_blank')}
-                    className="flex items-center gap-2"
-                  >
-                    <Linkedin className="h-4 w-4" /> LinkedIn
-                  </Button>
                 </div>
               </div>
               
