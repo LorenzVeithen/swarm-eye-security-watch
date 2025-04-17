@@ -31,14 +31,13 @@ const Team = () => {
                 </div>
                 
                 <p className="text-muted-foreground mb-6">
-                  Aerospace engineer, Cambridge graduate student, and an experienced
-                  leader including projects in collaboration with DLR, ESA, NASA, and CERN.
+                  Leader in the space industry with 6+ years of experience in the aerospace industry.
                 </p>
                 
                 <div className="space-y-2">
                   <div className="flex items-center">
                     <GraduationCap className="h-4 w-4 text-sturnus-teal mr-2" />
-                    <span className="text-sm">University of Cambridge</span>
+                    <span className="text-sm">University of Cambridge, TU Delft</span>
                   </div>
                   <div className="flex items-center">
                     <Briefcase className="h-4 w-4 text-sturnus-green mr-2" />
@@ -81,14 +80,14 @@ const Team = () => {
                 </div>
                 
                 <p className="text-muted-foreground mb-6">
-                  Cambridge Postdoctoral researcher with 10+ years of experience in distributed
+                  Postdoctoral researcher with 10+ years of experience in distributed
                   decision-making, automation, and multiagent systems.
                 </p>
                 
                 <div className="space-y-2">
                   <div className="flex items-center">
                     <GraduationCap className="h-4 w-4 text-sturnus-teal mr-2" />
-                    <span className="text-sm">Cambridge Postdoctoral Researcher</span>
+                    <span className="text-sm">University of Cambridge, University of Hong Kong</span>
                   </div>
                   <div className="flex items-center">
                     <Code className="h-4 w-4 text-sturnus-green mr-2" />
