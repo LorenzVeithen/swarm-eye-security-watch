@@ -1,5 +1,5 @@
 
-import { Shield, Zap, Navigation, Users } from "lucide-react";
+import { Shield, Zap, Navigation, Users, Database, Eye, Lock, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const features = [
@@ -27,7 +27,7 @@ const features = [
 
 const KeyFeatures = () => {
   return (
-    <section id="how-it-works" className="py-24 bg-sturnus-dark/90 relative overflow-hidden">
+    <section id="features" className="py-24 bg-sturnus-dark/90 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black to-transparent"></div>

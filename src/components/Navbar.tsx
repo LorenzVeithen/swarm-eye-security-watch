@@ -49,8 +49,14 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
           <button 
-            onClick={() => scrollToSection('key-advantages')} 
+            onClick={() => scrollToSection('features')} 
             className="text-sm hover:text-sturnus-green transition-colors"
+          >
+            Features
+          </button>
+          <button 
+            onClick={() => scrollToSection('key-advantages')} 
+            className="text-sm hover:text-sturnus-teal transition-colors"
           >
             Advantages
           </button>
@@ -80,8 +86,14 @@ const Navbar = () => {
         <div className="md:hidden absolute top-full left-0 w-full bg-secondary/95 backdrop-blur-md shadow-lg animate-fade-in">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <button 
-              onClick={() => scrollToSection('key-advantages')} 
+              onClick={() => scrollToSection('features')} 
               className="text-sm py-2 hover:text-sturnus-green transition-colors"
+            >
+              Features
+            </button>
+            <button 
+              onClick={() => scrollToSection('key-advantages')} 
+              className="text-sm py-2 hover:text-sturnus-teal transition-colors"
             >
               Advantages
             </button>
