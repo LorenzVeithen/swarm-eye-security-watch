@@ -1,5 +1,5 @@
 
-import { Drone } from "lucide-react";
+import { Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -64,48 +64,48 @@ const Hero = () => {
               {/* Central hub */}
               <div className="absolute w-20 h-20 bg-secondary/50 backdrop-blur-sm rounded-full flex items-center justify-center z-20">
                 <div className="absolute inset-0 border-2 border-sturnus-teal/30 rounded-full animate-pulse"></div>
-                <Drone className="h-10 w-10 text-sturnus-teal" />
+                <Cpu className="h-10 w-10 text-sturnus-teal" />
               </div>
 
               {/* First orbit - 3 drones */}
               <div className="absolute w-40 h-40 rounded-full border border-sturnus-teal/30 animate-[spin_15s_linear_infinite]">
                 <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-secondary/50 backdrop-blur-sm p-1.5 rounded-full">
-                  <Drone className="h-4 w-4 text-sturnus-teal" />
+                  <Cpu className="h-4 w-4 text-sturnus-teal" />
                 </div>
                 <div className="absolute top-1/2 -left-2 -translate-y-1/2 bg-secondary/50 backdrop-blur-sm p-1.5 rounded-full">
-                  <Drone className="h-4 w-4 text-sturnus-teal" />
+                  <Cpu className="h-4 w-4 text-sturnus-teal" />
                 </div>
                 <div className="absolute top-1/2 -right-2 -translate-y-1/2 bg-secondary/50 backdrop-blur-sm p-1.5 rounded-full">
-                  <Drone className="h-4 w-4 text-sturnus-teal" />
+                  <Cpu className="h-4 w-4 text-sturnus-teal" />
                 </div>
               </div>
 
               {/* Second orbit - 3 drones */}
               <div className="absolute w-64 h-64 rounded-full border border-sturnus-green/20 animate-[spin_25s_linear_infinite_reverse]">
                 <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-secondary/50 backdrop-blur-sm p-1.5 rounded-full">
-                  <Drone className="h-4 w-4 text-sturnus-green" />
+                  <Cpu className="h-4 w-4 text-sturnus-green" />
                 </div>
                 <div className="absolute top-1/2 -right-2 -translate-y-1/2 bg-secondary/50 backdrop-blur-sm p-1.5 rounded-full">
-                  <Drone className="h-4 w-4 text-sturnus-green" />
+                  <Cpu className="h-4 w-4 text-sturnus-green" />
                 </div>
                 <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-secondary/50 backdrop-blur-sm p-1.5 rounded-full">
-                  <Drone className="h-4 w-4 text-sturnus-green" />
+                  <Cpu className="h-4 w-4 text-sturnus-green" />
                 </div>
               </div>
 
               {/* Third orbit - 4 drones */}
               <div className="absolute w-96 h-96 rounded-full border border-sturnus-yellow/10 animate-[spin_35s_linear_infinite]">
                 <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-secondary/50 backdrop-blur-sm p-1.5 rounded-full">
-                  <Drone className="h-4 w-4 text-sturnus-yellow" />
+                  <Cpu className="h-4 w-4 text-sturnus-yellow" />
                 </div>
                 <div className="absolute top-1/2 -right-2 -translate-y-1/2 bg-secondary/50 backdrop-blur-sm p-1.5 rounded-full">
-                  <Drone className="h-4 w-4 text-sturnus-yellow" />
+                  <Cpu className="h-4 w-4 text-sturnus-yellow" />
                 </div>
                 <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-secondary/50 backdrop-blur-sm p-1.5 rounded-full">
-                  <Drone className="h-4 w-4 text-sturnus-yellow" />
+                  <Cpu className="h-4 w-4 text-sturnus-yellow" />
                 </div>
                 <div className="absolute top-1/2 -left-2 -translate-y-1/2 bg-secondary/50 backdrop-blur-sm p-1.5 rounded-full">
-                  <Drone className="h-4 w-4 text-sturnus-yellow" />
+                  <Cpu className="h-4 w-4 text-sturnus-yellow" />
                 </div>
               </div>
 
