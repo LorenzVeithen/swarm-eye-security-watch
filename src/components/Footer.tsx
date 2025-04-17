@@ -1,5 +1,5 @@
 
-import { Shield, Mail, MapPin, Linkedin } from "lucide-react";
+import { Mail, MapPin, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -8,7 +8,6 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <Shield className="h-8 w-8 text-security-500" />
               <span className="text-xl font-bold">STURNUS</span>
             </div>
             <p className="text-sm text-muted-foreground mb-6">
@@ -21,22 +20,24 @@ const Footer = () => {
             </div>
           </div>
           
-          <div>
-            <h3 className="font-semibold mb-4">Contact</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <Mail className="h-5 w-5 text-security-500 mr-2 shrink-0" />
-                <span className="text-sm text-muted-foreground">
-                  info@swarmeye-security.com
-                </span>
-              </li>
-              <li className="flex items-start">
-                <MapPin className="h-5 w-5 text-security-500 mr-2 shrink-0" />
-                <span className="text-sm text-muted-foreground">
-                  Cambridge, UK
-                </span>
-              </li>
-            </ul>
+          <div className="flex justify-end">
+            <div>
+              <h3 className="font-semibold mb-4">Contact</h3>
+              <ul className="space-y-4 text-right">
+                <li className="flex items-start justify-end">
+                  <span className="text-sm text-muted-foreground mr-2">
+                    info@swarmeye-security.com
+                  </span>
+                  <Mail className="h-5 w-5 text-security-500 shrink-0" />
+                </li>
+                <li className="flex items-start justify-end">
+                  <span className="text-sm text-muted-foreground mr-2">
+                    Cambridge, UK
+                  </span>
+                  <MapPin className="h-5 w-5 text-security-500 shrink-0" />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         

@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -51,7 +52,7 @@ const Navbar = () => {
             onClick={() => scrollToSection('key-advantages')} 
             className="text-sm hover:text-sturnus-green transition-colors"
           >
-            Features
+            Advantages
           </button>
           <button 
             onClick={() => scrollToSection('about')} 
@@ -82,7 +83,7 @@ const Navbar = () => {
               onClick={() => scrollToSection('key-advantages')} 
               className="text-sm py-2 hover:text-sturnus-green transition-colors"
             >
-              Features
+              Advantages
             </button>
             <button 
               onClick={() => scrollToSection('about')} 
