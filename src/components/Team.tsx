@@ -1,11 +1,8 @@
-
 import { User, Briefcase, Award, Code, GraduationCap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-
 const Team = () => {
-  return (
-    <section id="team" className="py-24 bg-secondary/20">
+  return <section id="team" className="bg-secondary/20 py-[20px]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Our Team</h2>
@@ -95,8 +92,6 @@ const Team = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Team;
