@@ -1,6 +1,8 @@
+
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,20 +24,17 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="/" className="flex items-center space-x-2">
+        <Link to="/" className="flex items-center space-x-2">
           <span className="text-xl font-bold gradient-text">STURNUS</span>
-        </a>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#how-it-works" className="text-sm hover:text-sturnus-green transition-colors">How It Works</a>
-          <a href="#about" className="text-sm hover:text-sturnus-teal transition-colors">About</a>
-          <a href="#contact" className="text-sm hover:text-sturnus-teal transition-colors">Contact</a>
-          <a href="/blog" className="text-sm hover:text-sturnus-teal transition-colors">Blog</a>
-          <a href="/careers" className="text-sm hover:text-sturnus-teal transition-colors">Careers</a>
-          <Button size="sm" className="bg-sturnus-teal hover:bg-sturnus-teal/90">
-            Get Started
-          </Button>
+          <Link to="/#how-it-works" className="text-sm hover:text-sturnus-green transition-colors">How It Works</Link>
+          <Link to="/#about" className="text-sm hover:text-sturnus-teal transition-colors">About</Link>
+          <Link to="/#contact" className="text-sm hover:text-sturnus-teal transition-colors">Contact</Link>
+          <Link to="/blog" className="text-sm hover:text-sturnus-teal transition-colors">Blog</Link>
+          {/* Careers link removed as requested */}
         </div>
 
         {/* Mobile Menu Button */}
@@ -48,44 +47,35 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-secondary/95 backdrop-blur-md shadow-lg animate-fade-in">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <a 
-              href="#how-it-works" 
+            <Link 
+              to="/#how-it-works" 
               className="text-sm py-2 hover:text-sturnus-green transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               How It Works
-            </a>
-            <a 
-              href="#about" 
+            </Link>
+            <Link 
+              to="/#about" 
               className="text-sm py-2 hover:text-sturnus-teal transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               About
-            </a>
-            <a 
-              href="#contact" 
+            </Link>
+            <Link 
+              to="/#contact" 
               className="text-sm py-2 hover:text-sturnus-yellow transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
-            </a>
-            <a 
-              href="/blog" 
+            </Link>
+            <Link 
+              to="/blog" 
               className="text-sm py-2 hover:text-sturnus-teal transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Blog
-            </a>
-            <a 
-              href="/careers" 
-              className="text-sm py-2 hover:text-sturnus-teal transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Careers
-            </a>
-            <Button className="w-full bg-sturnus-teal hover:bg-sturnus-teal/90">
-              Get Started
-            </Button>
+            </Link>
+            {/* Careers link removed */}
           </div>
         </div>
       )}
