@@ -26,7 +26,7 @@ const Footer = () => {
               <ul className="space-y-4 text-right">
                 <li className="flex items-start justify-end">
                   <span className="text-sm text-muted-foreground mr-2">
-                    info@swarmeye-security.com
+                    lavv2@cam.ac.uk
                   </span>
                   <Mail className="h-5 w-5 text-security-500 shrink-0" />
                 </li>
@@ -43,15 +43,15 @@ const Footer = () => {
         
         <div className="border-t border-accent/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Sturnus Security. All rights reserved.
+            &copy; {new Date().getFullYear()} STURNUS. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-sm text-muted-foreground hover:text-security-500 transition-colors">
+            <Link to="/privacy-policy" className="text-sm text-muted-foreground hover:text-security-500 transition-colors">
               Privacy Policy
-            </a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-security-500 transition-colors">
+            </Link>
+            <Link to="/terms-of-service" className="text-sm text-muted-foreground hover:text-security-500 transition-colors">
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>
