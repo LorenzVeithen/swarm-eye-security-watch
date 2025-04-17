@@ -1,33 +1,25 @@
 import { Shield, Zap, Navigation, Users, Database, Eye, Lock, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 const features = [{
-  icon: Shield,
-  title: "Comprehensive Protection",
-  description: "Our swarm technology provides unprecedented coverage for monitoring and securing critical infrastructure."
-}, {
   icon: Zap,
   title: "Real-time Response",
-  description: "Instant detection and rapid response to security threats through coordinated drone swarm action."
+  description: "Instant detection and rapid response to security threats."
 }, {
   icon: Navigation,
   title: "Autonomous Navigation",
-  description: "Advanced AI algorithms enable drones to navigate complex environments without human guidance."
+  description: "Advanced AI algorithms enable drones to navigate complex environments with limited human guidance."
 }, {
   icon: Users,
   title: "Single-Operator Control",
   description: "One operator can manage hundreds of drones simultaneously through our intuitive control interface."
 }, {
   icon: Database,
-  title: "Data Aggregation",
+  title: "Swarm-Intelligence",
   description: "Seamless collection and analysis of multi-sensor data across the entire swarm."
 }, {
   icon: Eye,
-  title: "Enhanced Surveillance",
+  title: "Continuous Eyes-In-The-Sky",
   description: "Cover large areas with persistent monitoring capabilities without fatigue or distraction."
-}, {
-  icon: Lock,
-  title: "Secure Communications",
-  description: "Encrypted mesh network ensures reliable and secure communications between swarm units."
 }, {
   icon: Cpu,
   title: "Edge Processing",
@@ -65,7 +57,7 @@ const KeyFeatures = () => {
         <div className="mt-16 relative overflow-hidden rounded-lg">
           <div className="aspect-video relative">
             <video className="w-full h-full object-cover rounded-lg" autoPlay muted loop playsInline poster="/placeholder.svg">
-              <source src="/drone-video.mp4" type="video/mp4" />
+              <source src="./images/DEMO1.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>

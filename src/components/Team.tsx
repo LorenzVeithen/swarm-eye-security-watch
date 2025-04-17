@@ -10,7 +10,7 @@ const Team = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Our Team</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto py-[20px]">
-            Sturnus is a startup from the University of Cambridge, building at the forefront of event security
+            STURNUS is a startup from the University of Cambridge, building at the forefront of event security
             innovation by bringing deep expertise in aerospace engineering, AI, and autonomous systems.
           </p>
         </div>
@@ -42,7 +42,7 @@ const Team = () => {
                   </div>
                   <div className="flex items-center">
                     <Briefcase className="h-4 w-4 text-sturnus-green mr-2" />
-                    <span className="text-sm">Aerospace Engineering</span>
+                    <span className="text-sm">Aerospace Engineer</span>
                   </div>
                   <div className="flex items-center">
                     <Award className="h-4 w-4 text-sturnus-yellow mr-2" />
@@ -96,7 +96,7 @@ const Team = () => {
                   </div>
                   <div className="flex items-center">
                     <User className="h-4 w-4 text-sturnus-yellow mr-2" />
-                    <span className="text-sm">10+ Years Experience</span>
+                    <span className="text-sm">Raised £250K for reasearch and published 27 articles with 450+ citations</span>
                   </div>
                 </div>
 
