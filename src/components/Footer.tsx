@@ -1,10 +1,7 @@
-
 import { Shield, Mail, MapPin, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Footer = () => {
-  return (
-    <footer className="bg-secondary py-12 border-t border-accent/10">
+  return <footer className="bg-secondary py-12 border-t border-accent/10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="md:col-span-1">
@@ -22,7 +19,7 @@ const Footer = () => {
             </div>
           </div>
           
-          <div>
+          <div className="Remove the section">
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
@@ -76,8 +73,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
