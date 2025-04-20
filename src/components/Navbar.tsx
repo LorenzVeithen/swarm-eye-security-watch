@@ -22,7 +22,7 @@ const Navbar = () => {
   const scrollToSection = (id: string) => {
     setIsMenuOpen(false);
     
-    // If we're not on the home page, navigate to home page first
+    // If we're not on the home page, navigate to home page with hash
     if (location.pathname !== '/') {
       navigate(`/#${id}`);
       return;
