@@ -19,6 +19,23 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Handle scroll to section after navigation is complete
+  useEffect(() => {
+    // Check if the URL has a hash
+    if (location.hash) {
+      // Get the element id from the hash
+      const id = location.hash.substring(1);
+      const element = document.getElementById(id);
+      
+      // If the element exists, scroll to it
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100); // Small delay to ensure DOM is ready
+      }
+    }
+  }, [location]);
+
   const scrollToSection = (id: string) => {
     setIsMenuOpen(false);
     
@@ -28,10 +45,12 @@ const Navbar = () => {
       return;
     }
     
-    // Otherwise, scroll to the section on the current page
+    // If we're already on the home page
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      // Update URL without reloading the page
+      window.history.pushState(null, '', `/#${id}`);
     }
   };
 
