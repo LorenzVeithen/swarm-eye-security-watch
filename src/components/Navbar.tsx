@@ -27,10 +27,17 @@ const Navbar = () => {
       const id = location.hash.substring(1);
       const element = document.getElementById(id);
       
-      // If the element exists, scroll to it
+      // If the element exists, scroll to it with an offset
       if (element) {
         setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' });
+          const navbarHeight = 80; // Approximate navbar height in pixels
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
         }, 100); // Small delay to ensure DOM is ready
       }
     }
@@ -48,7 +55,15 @@ const Navbar = () => {
     // If we're already on the home page
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const navbarHeight = 80; // Approximate navbar height in pixels
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      
       // Update URL without reloading the page
       window.history.pushState(null, '', `/#${id}`);
     }
