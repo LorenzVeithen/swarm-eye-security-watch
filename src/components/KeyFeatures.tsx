@@ -1,3 +1,4 @@
+
 import { Shield, Zap, Navigation, Users, Database, Eye, Lock, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -64,7 +65,7 @@ const KeyFeatures = () => {
               playsInline
               poster="/placeholder.svg"
             >
-              <source src="./components/images/DEMO1.mp4" type="video/mp4" />
+              <source src="/src/components/images/DEMO1.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
