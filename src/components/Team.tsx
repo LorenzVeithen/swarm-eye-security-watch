@@ -1,13 +1,13 @@
+
 import { User, Briefcase, Award, Code, GraduationCap, Linkedin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Team = () => {
   return <section id="team" className="bg-secondary/20 py-[20px]">
       <div className="container mx-auto px-[5px] py-[20px]">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-3xl font-bold mb-4">Our Team</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto py-[20px]">
             STURNUS is a startup from the University of Cambridge, building at the forefront of event security
@@ -15,7 +15,7 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto mb-12 rounded-lg overflow-hidden shadow-lg">
+        <div className="max-w-3xl mx-auto mb-8 rounded-lg overflow-hidden shadow-lg">
           <AspectRatio ratio={16/9}>
             <img 
               src="/lovable-uploads/a0cf3b2d-477e-4229-a17c-112385a6a5da.png"
@@ -29,12 +29,9 @@ const Team = () => {
           <Card className="bg-secondary/40 backdrop-blur-sm border border-accent/20 overflow-hidden">
             <CardContent className="p-0">
               <div className="p-6">
-                <div className="flex items-center mb-4">
-                  <Avatar className="h-16 w-16 mr-4 border-2 border-sturnus-teal">
-                    <AvatarFallback className="bg-sturnus-teal/20 text-sturnus-teal">LC</AvatarFallback>
-                  </Avatar>
+                <div className="mb-4">
                   <div>
-                    <h3 className="text-xl font-bold">Lorenz</h3>
+                    <h3 className="text-xl font-bold">Lorenz Veithen</h3>
                     <p className="text-sturnus-teal">CEO</p>
                   </div>
                 </div>
@@ -76,12 +73,9 @@ const Team = () => {
           <Card className="bg-secondary/40 backdrop-blur-sm border border-accent/20 overflow-hidden">
             <CardContent className="p-0">
               <div className="p-6">
-                <div className="flex items-center mb-4">
-                  <Avatar className="h-16 w-16 mr-4 border-2 border-sturnus-green">
-                    <AvatarFallback className="bg-sturnus-green/20 text-sturnus-green">KJ</AvatarFallback>
-                  </Avatar>
+                <div className="mb-4">
                   <div>
-                    <h3 className="text-xl font-bold">Kai</h3>
+                    <h3 className="text-xl font-bold">Kai-Fung Chu</h3>
                     <p className="text-sturnus-green">CTO</p>
                   </div>
                 </div>
@@ -126,3 +120,4 @@ const Team = () => {
 };
 
 export default Team;
+
