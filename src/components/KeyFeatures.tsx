@@ -1,5 +1,6 @@
 import { Shield, Zap, Navigation, Users, Database, Eye, Lock, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
 const features = [{
   icon: Zap,
   title: "Real-time Response",
@@ -25,14 +26,13 @@ const features = [{
   title: "Edge Processing",
   description: "On-board AI processing reduces latency and enables operation in low-bandwidth environments."
 }];
+
 const KeyFeatures = () => {
   return <section id="features" className="py-24 bg-sturnus-dark/90 relative overflow-hidden">
-      {/* Background decoration */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black to-transparent"></div>
         <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-black to-transparent"></div>
         
-        {/* Grid pattern overlay */}
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiM1QUE3OEUiIGZpbGwtb3BhY2l0eT0iLjAzIiBkPSJNMzAgMGg2MHY2MEgzMHoiLz48cGF0aCBmaWxsPSIjNUFBNzhFIiBmaWxsLW9wYWNpdHk9Ii4wMyIgZD0iTTAgMGg2MHY2MEgweiIvPjwvZz48L3N2Zz4=')] opacity-30"></div>
       </div>
       
@@ -56,8 +56,15 @@ const KeyFeatures = () => {
 
         <div className="mt-16 relative overflow-hidden rounded-lg">
           <div className="aspect-video relative">
-            <video className="w-full h-full object-cover rounded-lg" autoPlay muted loop playsInline poster="/placeholder.svg">
-              <source src="./images/DEMO1.mp4" type="video/mp4" />
+            <video 
+              className="w-full h-full object-cover rounded-lg"
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster="/placeholder.svg"
+            >
+              <source src="./components/images/DEMO1.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -72,4 +79,5 @@ const KeyFeatures = () => {
       </div>
     </section>;
 };
+
 export default KeyFeatures;
