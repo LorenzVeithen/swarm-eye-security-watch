@@ -1,18 +1,10 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Check, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-
-// Type for the subscriber data
-type Subscriber = {
-  id: string;
-  email: string;
-  name: string;
-  createdAt: string;
-};
+import { supabase } from "@/integrations/supabase/client";
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -28,55 +20,34 @@ const ContactForm = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Generate a unique ID for the subscriber
-    const subscriberId = crypto.randomUUID();
-    
-    // Create the subscriber object
-    const newSubscriber: Subscriber = {
-      id: subscriberId,
-      email: formData.email,
-      name: formData.name,
-      createdAt: new Date().toISOString()
-    };
-    
-    // Get existing subscribers from localStorage or initialize empty array
-    const existingSubscribersJson = localStorage.getItem('subscribers');
-    const existingSubscribers: Subscriber[] = existingSubscribersJson 
-      ? JSON.parse(existingSubscribersJson) 
-      : [];
-    
-    // Check if email already exists
-    const emailExists = existingSubscribers.some(
-      subscriber => subscriber.email.toLowerCase() === formData.email.toLowerCase()
-    );
-    
-    if (emailExists) {
-      setIsSubmitting(false);
-      toast({
-        title: "Already Subscribed",
-        description: "This email is already subscribed to our mailing list.",
-        variant: "destructive"
-      });
-      return;
-    }
-    
-    // Add new subscriber to the array
-    const updatedSubscribers = [...existingSubscribers, newSubscriber];
-    
-    // Save to localStorage
-    localStorage.setItem('subscribers', JSON.stringify(updatedSubscribers));
-    
-    // Log the subscriber data for integration with other systems
-    console.log('New subscriber added:', newSubscriber);
-    console.log('All subscribers:', updatedSubscribers);
-    
-    // Show success UI
-    setTimeout(() => {
-      setIsSubmitting(false);
+
+    try {
+      const { error } = await supabase
+        .from('subscribers')
+        .insert([
+          {
+            email: formData.email,
+            name: formData.name
+          }
+        ]);
+
+      if (error) {
+        if (error.code === '23505') { // Unique violation error code
+          toast({
+            title: "Already Subscribed",
+            description: "This email is already subscribed to our mailing list.",
+            variant: "destructive"
+          });
+          setIsSubmitting(false);
+          return;
+        }
+        throw error;
+      }
+
+      // Show success UI
       setIsSubmitted(true);
       toast({
         title: "Subscription Successful",
@@ -91,7 +62,16 @@ const ContactForm = () => {
           email: ""
         });
       }, 3000);
-    }, 1500);
+
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was an error subscribing to the newsletter. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
