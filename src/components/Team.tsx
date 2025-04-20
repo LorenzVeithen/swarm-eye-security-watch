@@ -1,8 +1,8 @@
-
 import { User, Briefcase, Award, Code, GraduationCap, Linkedin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Team = () => {
   return <section id="team" className="bg-secondary/20 py-[20px]">
@@ -15,8 +15,17 @@ const Team = () => {
           </p>
         </div>
 
+        <div className="max-w-3xl mx-auto mb-12 rounded-lg overflow-hidden shadow-lg">
+          <AspectRatio ratio={16/9}>
+            <img 
+              src="/lovable-uploads/a0cf3b2d-477e-4229-a17c-112385a6a5da.png"
+              alt="STURNUS founders at Cambridge University"
+              className="w-full h-full object-cover"
+            />
+          </AspectRatio>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-          {/* CEO Card */}
           <Card className="bg-secondary/40 backdrop-blur-sm border border-accent/20 overflow-hidden">
             <CardContent className="p-0">
               <div className="p-6">
@@ -49,7 +58,6 @@ const Team = () => {
                   </div>
                 </div>
 
-                {/* LinkedIn Button */}
                 <div className="mt-4">
                   <Button 
                     variant="outline" 
@@ -65,7 +73,6 @@ const Team = () => {
             </CardContent>
           </Card>
 
-          {/* CTO Card */}
           <Card className="bg-secondary/40 backdrop-blur-sm border border-accent/20 overflow-hidden">
             <CardContent className="p-0">
               <div className="p-6">
@@ -99,7 +106,6 @@ const Team = () => {
                   </div>
                 </div>
 
-                {/* LinkedIn Button */}
                 <div className="mt-4">
                   <Button 
                     variant="outline" 
@@ -118,4 +124,5 @@ const Team = () => {
       </div>
     </section>;
 };
+
 export default Team;
