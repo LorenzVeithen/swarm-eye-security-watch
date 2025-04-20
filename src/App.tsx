@@ -12,6 +12,7 @@ import BlogPost from "./pages/BlogPost";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 
+// Create a client outside of the component
 const queryClient = new QueryClient();
 
 const App = () => (
