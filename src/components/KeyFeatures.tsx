@@ -1,6 +1,6 @@
-
 import { Shield, Zap, Navigation, Users, Database, Eye, Lock, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const features = [{
   icon: Zap,
@@ -55,8 +55,8 @@ const KeyFeatures = () => {
             </div>)}
         </div>
 
-        <div className="mt-16 relative overflow-hidden rounded-lg">
-          <div className="aspect-video relative">
+        <div className="mt-16 relative overflow-hidden rounded-lg max-w-4xl mx-auto">
+          <AspectRatio ratio={16 / 9}>
             <video 
               className="w-full h-full object-cover rounded-lg"
               autoPlay
@@ -68,13 +68,13 @@ const KeyFeatures = () => {
               <source src="/src/components/images/DEMO1.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 w-full p-6">
-              <h3 className="text-2xl font-bold mb-2">Drone Swarm Technology</h3>
-              <p className="text-gray-200 mb-4 max-w-2xl">
-                Watch how our coordinated drone swarm provides unmatched security coverage for critical infrastructure.
-              </p>
-            </div>
+          </AspectRatio>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 w-full p-6">
+            <h3 className="text-2xl font-bold mb-2">Drone Swarm Technology</h3>
+            <p className="text-gray-200 mb-4 max-w-2xl">
+              Watch how our coordinated drone swarm provides unmatched security coverage for critical infrastructure.
+            </p>
           </div>
         </div>
       </div>
