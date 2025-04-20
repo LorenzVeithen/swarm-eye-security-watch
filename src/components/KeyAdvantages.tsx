@@ -1,5 +1,7 @@
+
 import { Calendar, Clock, Users, Sun, BellRing, Target } from "lucide-react";
 import DroneIconNew from "./DroneIconNew";
+
 const advantages = [{
   icon: Calendar,
   title: "Early-stage swarm of three drones",
@@ -25,6 +27,7 @@ const advantages = [{
   title: "Target tracking",
   description: "Once an intruder is identified, a single drone follows them until security intervenes"
 }];
+
 const KeyAdvantages = () => {
   return <section id="key-advantages" className="bg-secondary/50 relative overflow-hidden py-[20px]">
       <div className="container mx-auto px-4 relative z-10">
@@ -47,20 +50,11 @@ const KeyAdvantages = () => {
           
           <div className="w-full md:w-1/2 flex justify-center items-center">
             <div className="rounded-lg overflow-hidden shadow-lg max-w-md mx-auto">
-              <div className="relative aspect-video">
-                <video className="w-full h-full object-cover" autoPlay muted loop playsInline poster="/placeholder.svg">
-                  <source src="/drone-video.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                
-                {/* Fallback in case video doesn't load */}
-                <div className="absolute inset-0 flex items-center justify-center bg-sturnus-dark/50 backdrop-blur-sm">
-                  <div className="text-center">
-                    <div className="mb-2 text-sturnus-teal text-lg font-bold">Drone Swarm Technology</div>
-                    <p className="text-sm text-gray-300">Coordinated autonomous drone operations</p>
-                  </div>
-                </div>
-              </div>
+              <img 
+                src="/lovable-uploads/f9f800dc-af9f-48cf-bc06-3a429b7aa3eb.png" 
+                alt="Drone Swarm Security Illustration" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
