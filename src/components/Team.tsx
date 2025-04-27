@@ -10,8 +10,8 @@ const Team = () => {
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold mb-4">Our Team</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto py-[20px]">
-            STURNUS is a startup from the University of Cambridge, building at the forefront of event security
-            innovation by bringing deep expertise in aerospace engineering, AI, and autonomous systems.
+            STURNUS is a startup from the University of Cambridge, building at the forefront of site security
+            innovation by bringing deep expertise in aerospace engineering, AI, robotics, and autonomous systems.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ const Team = () => {
                 </div>
                 
                 <p className="text-muted-foreground mb-6">
-                  Leader in the space industry with 6+ years of experience in the aerospace industry.
+                  Postgraduate student with 6+ years of experience in the aerospace industry, leading teams in the development of deep space and Earth orbit missions.
                 </p>
                 
                 <div className="space-y-2">
@@ -51,7 +51,7 @@ const Team = () => {
                   </div>
                   <div className="flex items-center">
                     <Award className="h-4 w-4 text-sturnus-yellow mr-2" />
-                    <span className="text-sm">Projects with DLR, ESA, NASA, CERN</span>
+                    <span className="text-sm">Previously worked on projects with DLR, ESA, NASA, and CERN</span>
                   </div>
                 </div>
 
@@ -93,10 +93,6 @@ const Team = () => {
                   <div className="flex items-center">
                     <Code className="h-4 w-4 text-sturnus-green mr-2" />
                     <span className="text-sm">Distributed Systems Expert</span>
-                  </div>
-                  <div className="flex items-center">
-                    <User className="h-4 w-4 text-sturnus-yellow mr-2" />
-                    <span className="text-sm">Raised £250K for reasearch and published 27 articles with 450+ citations</span>
                   </div>
                 </div>
 

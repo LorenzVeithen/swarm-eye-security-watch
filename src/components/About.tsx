@@ -6,10 +6,11 @@ const About = () => {
           <div>
             <h2 className="text-3xl font-bold mb-6">About STURNUS</h2>
             <p className="text-muted-foreground mb-6">
-              STURNUS is a leading innovator in hardware-agnostic drone swarm technology. Founded by experts in robotics, artificial intelligence, and aerospace engineering from the University of Cambridge, we're revolutionizing how drone fleets operate.
+            Today, 2.8 million drones are being used across industries ranging from agriculture and delivery to security and defense. However, the vast majority operate independently or in limited fleets rather than in large, intelligent swarms. At STURNUS, we are addressing this missed opportunity.
             </p>
             <p className="text-muted-foreground mb-8">
-              Today, 2.8 million drones are being used across industries ranging from agriculture and delivery to security and defense. However, the vast majority operate independently or in limited fleets rather than in large, intelligent swarms. At STURNUS, we're addressing this missed opportunity.
+              STURNUS is developing a hardware-agnostic software allowing off-the-shelf drones to be controlled as a swarm by a single operator. 
+              Swarm-like behaviour allows multi-species of drones to dynamically adapt to complex environments to perform collaborative tasks, revolutionising how drone fleets operate.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
@@ -18,8 +19,8 @@ const About = () => {
                   <CheckCircle className="h-6 w-6 text-sturnus-teal" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Hardware-Agnostic Platform</h3>
-                  <p className="text-sm text-muted-foreground">Compatible with various drone models and manufacturers</p>
+                  <h3 className="font-medium">Hardware-Agnostic</h3>
+                  <p className="text-sm text-muted-foreground">Link any existing drone with little to no hardware modifications.</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -28,7 +29,7 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="font-medium">Swarm Intelligence</h3>
-                  <p className="text-sm text-muted-foreground">Dynamic adaptation to complex environments</p>
+                  <p className="text-sm text-muted-foreground"> Leveraging swarm intelligent behaviour allows large fleets to dynamically adapt to complex environments and scenarios.</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -37,7 +38,7 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="font-medium">Single-Operator Control</h3>
-                  <p className="text-sm text-muted-foreground">Manage thousands of drones efficiently</p>
+                  <p className="text-sm text-muted-foreground">Manage complete fleets effortlessly, designed to be scaled to thousands of drones.</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -46,7 +47,7 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="font-medium">Multi-Species Integration</h3>
-                  <p className="text-sm text-muted-foreground">Coordinate different drone types in one system</p>
+                  <p className="text-sm text-muted-foreground"> Enhance the fleet potential by controlling drones with different capabilities within your swarm. </p>
                 </div>
               </div>
             </div>
@@ -62,9 +63,9 @@ const About = () => {
                     <Network className="h-6 w-6 text-sturnus-teal" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium mb-2">Swarm-Like Behavior</h4>
+                    <h4 className="text-lg font-medium mb-2">A Multi-Agent World</h4>
                     <p className="text-muted-foreground">
-                      Enabling multi-species of drones to dynamically adapt to complex environments through sophisticated swarm intelligence.
+                      Combining the power of existing robotic agents with different capabilities to achieve complex tasks collaboratively rather than building an expensive all-rounder robot.
                     </p>
                   </div>
                 </div>
@@ -74,9 +75,9 @@ const About = () => {
                     <Users className="h-6 w-6 text-sturnus-green" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium mb-2">Enhanced Efficiency</h4>
+                    <h4 className="text-lg font-medium mb-2">10x Efficiency</h4>
                     <p className="text-muted-foreground">
-                      Dramatically improving cost-effectiveness by allowing a single operator to control thousands of coordinated drones.
+                      Dramatically improving cost-effectiveness of drone operations by allowing a single operator to control thousands of coordinated drones.
                     </p>
                   </div>
                 </div>
@@ -86,9 +87,9 @@ const About = () => {
                     <Cpu className="h-6 w-6 text-sturnus-yellow" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium mb-2">Industry Transformation</h4>
+                    <h4 className="text-lg font-medium mb-2"> Seamless Integration </h4>
                     <p className="text-muted-foreground">
-                      Revolutionizing how drones are used across industries - from agriculture and delivery to security and urban planning.
+                      Your existing fleet can be augmented with swarm-intelligent capabilities in no time.
                     </p>
                   </div>
                 </div>
