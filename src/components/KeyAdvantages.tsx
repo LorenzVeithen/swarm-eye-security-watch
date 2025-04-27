@@ -4,27 +4,23 @@ import DroneIconNew from "./DroneIconNew";
 
 const advantages = [{
   icon: Calendar,
-  title: "Early-stage swarm of three drones",
+  title: "Early-Stage Swarm of Three Drones",
   description: "Eventually scaling to 20+ drones for future events"
 }, {
   icon: Clock,
-  title: "Uninterrupted aerial vigilance",
+  title: "Uninterrupted Aerial Vigilance",
   description: "Real-time security incident detection around the clock"
 }, {
   icon: Users,
-  title: "Effortless control",
+  title: "Effortless Control",
   description: "A single operator manages the entire swarm"
 }, {
-  icon: Sun,
-  title: "Day-and-night intrusion detection",
-  description: "24/7 monitoring in all lighting conditions"
-}, {
   icon: BellRing,
-  title: "Direct notification of relevant staff",
+  title: "Direct Notification of Relevant Staff",
   description: "Faster communication for a faster response"
 }, {
   icon: Target,
-  title: "Target tracking",
+  title: "Target Tracking",
   description: "Once an intruder is identified, a single drone follows them until security intervenes"
 }];
 
@@ -33,7 +29,7 @@ const KeyAdvantages = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center md:flex-row gap-8">
           <div className="w-full md:w-1/2">
-            <h2 className="text-3xl font-bold mb-8">Key Advantages</h2>
+            <h2 className="text-3xl font-bold mb-8">First Prototype Capabilities</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {advantages.map((advantage, index) => <div key={index} className="flex items-start space-x-4">

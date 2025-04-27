@@ -32,10 +32,10 @@ const Hero = () => {
         <div className="flex items-center justify-center">
           <div className="w-full md:w-2/3 text-center">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
-              Hardware-Agnostic <span className="gradient-text">Drone Swarm</span> Technology
+              <span className="gradient-text">Drone Swarm</span> Technology for Site Security
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Enabling thousands of drones to work together as an intelligent swarm, controlled by a single operator across multiple industries.
+              Enabling multi-species aerial drones to work together as an intelligent swarm, controlled by a single operator.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

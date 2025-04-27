@@ -2,31 +2,7 @@ import { Shield, Zap, Navigation, Users, Database, Eye, Lock, Cpu } from "lucide
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
-const features = [{
-  icon: Zap,
-  title: "Real-time Response",
-  description: "Instant detection and rapid response to security threats."
-}, {
-  icon: Navigation,
-  title: "Autonomous Navigation",
-  description: "Advanced AI algorithms enable drones to navigate complex environments with limited human guidance."
-}, {
-  icon: Users,
-  title: "Single-Operator Control",
-  description: "One operator can manage hundreds of drones simultaneously through our intuitive control interface."
-}, {
-  icon: Database,
-  title: "Swarm-Intelligence",
-  description: "Seamless collection and analysis of multi-sensor data across the entire swarm."
-}, {
-  icon: Eye,
-  title: "Continuous Eyes-In-The-Sky",
-  description: "Cover large areas with persistent monitoring capabilities without fatigue or distraction."
-}, {
-  icon: Cpu,
-  title: "Edge Processing",
-  description: "On-board AI processing reduces latency and enables operation in low-bandwidth environments."
-}];
+const features = [];
 
 const KeyFeatures = () => {
   return <section id="features" className="py-24 bg-sturnus-dark/90 relative overflow-hidden">
@@ -39,9 +15,9 @@ const KeyFeatures = () => {
       
       <div className="container mx-auto px-4 relative z-10 py-[20px]">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl font-bold mb-4">Key Features</h2>
+          <h2 className="text-3xl font-bold mb-4">Application to Site Security </h2>
           <p className="text-muted-foreground">
-            Our hardware-agnostic platform transforms individual drones into an intelligent, coordinated swarm.
+            STURNUS is first developing their technology for site security applications, allowing a rapid identification of intruders by day and night.
           </p>
         </div>
 
@@ -71,9 +47,9 @@ const KeyFeatures = () => {
           </AspectRatio>
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
           <div className="absolute bottom-0 left-0 w-full p-6">
-            <h3 className="text-2xl font-bold mb-2">Drone Swarm Technology</h3>
+            <h3 className="text-2xl font-bold mb-2">Threat Identification</h3>
             <p className="text-gray-200 mb-4 max-w-2xl">
-              Watch how our coordinated drone swarm provides unmatched security coverage for critical infrastructure.
+              Our drones autonomously identify potential intruders approaching and trespassing a given site perimeter.
             </p>
           </div>
         </div>
