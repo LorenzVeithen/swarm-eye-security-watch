@@ -94,6 +94,10 @@ const Team = () => {
                     <Code className="h-4 w-4 text-sturnus-green mr-2" />
                     <span className="text-sm">Distributed Systems Expert</span>
                   </div>
+                  <div className="flex items-center">
+                    <User className="h-4 w-4 text-sturnus-yellow mr-2" />
+                    <span className="text-sm">Raised £250K for reasearch and published 27 articles with 450+ citations</span>
+                  </div>
                 </div>
 
                 <div className="mt-4">
