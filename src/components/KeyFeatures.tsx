@@ -1,3 +1,4 @@
+
 import { Shield, Zap, Navigation, Users, Database, Eye, Lock, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -33,17 +34,11 @@ const KeyFeatures = () => {
 
         <div className="mt-16 relative overflow-hidden rounded-lg max-w-4xl mx-auto">
           <AspectRatio ratio={16 / 9}>
-            <video 
+            <img 
+              src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzl1YnZienh5a2FqYW9lZ2c1NmsxNngzbmNoeG5ueDR0c3g0aHo3ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vNdgaSOdoxNmM95VJj/giphy.gif"
+              alt="Drone surveillance"
               className="w-full h-full object-cover rounded-lg"
-              autoPlay
-              muted
-              loop
-              playsInline
-              poster="/placeholder.svg"
-            >
-              <source src="/src/components/images/DEMO1.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            />
           </AspectRatio>
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
           <div className="absolute bottom-0 left-0 w-full p-6">
