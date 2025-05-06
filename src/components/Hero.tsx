@@ -9,19 +9,15 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
-      {/* Video Background */}
+      {/* GIF Background */}
       <div className="absolute inset-0 z-0">
-        <video 
-          className="absolute w-full h-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/placeholder.svg"
-        >
-          <source src="/src/components/images/DEMO2.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div className="absolute w-full h-full">
+          <img
+            src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM29iYTdkaW16bjhsa3pmNnZ3d2sxZGVpeGVrN3RhNnEyazZnNHM0cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ijxKTIkQRNJdODEgJO/giphy.gif"
+            alt="Drone swarm"
+            className="w-full h-full object-cover"
+          />
+        </div>
         
         {/* Overlay to ensure text readability */}
         <div className="absolute inset-0 bg-black/50"></div>
