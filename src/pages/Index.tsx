@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import KeyAdvantages from "@/components/KeyAdvantages";
 import KeyFeatures from "@/components/KeyFeatures";
-import Team from "@/components/Team";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
@@ -17,7 +16,6 @@ const Index = () => {
         <About />
         <KeyFeatures />
         <KeyAdvantages />
-        <Team />
         <ContactForm />
       </main>
       <Footer />
