@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute w-full h-full">
           <img
-            src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM29iYTdkaW16bjhsa3pmNnZ3d2sxZGVpeGVrN3RhNnEyazZnNHM0cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ijxKTIkQRNJdODEgJO/giphy.gif"
+            src="/your-hero-gif.gif" // 👈 Update this path to your uploaded GIF
             alt="Drone swarm"
             className="w-full h-full object-cover"
           />

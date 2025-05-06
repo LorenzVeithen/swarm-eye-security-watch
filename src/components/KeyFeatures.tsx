@@ -35,7 +35,7 @@ const KeyFeatures = () => {
         <div className="mt-16 relative overflow-hidden rounded-lg max-w-4xl mx-auto">
           <AspectRatio ratio={16 / 9}>
             <img 
-              src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzl1YnZienh5a2FqYW9lZ2c1NmsxNngzbmNoeG5ueDR0c3g0aHo3ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vNdgaSOdoxNmM95VJj/giphy.gif"
+              src="/your-features-gif.gif" // 👈 Update this path to your uploaded GIF
               alt="Drone surveillance"
               className="w-full h-full object-cover rounded-lg"
             />
