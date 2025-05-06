@@ -100,6 +100,9 @@ const Navbar = () => {
           >
             Advantages
           </button>
+          <Link to="/teams" className="text-sm hover:text-sturnus-yellow transition-colors">
+            Team
+          </Link>
           <button 
             onClick={() => scrollToSection('contact')} 
             className="text-sm hover:text-sturnus-teal transition-colors"
@@ -137,6 +140,13 @@ const Navbar = () => {
             >
               Advantages
             </button>
+            <Link 
+              to="/teams" 
+              className="text-sm py-2 hover:text-sturnus-yellow transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Team
+            </Link>
             <button 
               onClick={() => scrollToSection('contact')} 
               className="text-sm py-2 hover:text-sturnus-yellow transition-colors"
