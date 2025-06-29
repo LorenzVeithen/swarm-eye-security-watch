@@ -1,4 +1,3 @@
-
 import { Shield, Zap, Navigation, Users, Database, Eye, Lock, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -7,7 +6,7 @@ const features = [];
 
 const KeyFeatures = () => {
   return (
-    <section id="features" className="py-24 bg-sturnus-dark/90 relative overflow-hidden">
+    <section id="features" className="py-12 bg-sturnus-dark/90 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black to-transparent"></div>
         <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-black to-transparent"></div>
@@ -15,7 +14,7 @@ const KeyFeatures = () => {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiM1QUE3OEUiIGZpbGwtb3BhY2l0eT0iLjAzIiBkPSJNMzAgMGg2MHY2MEgzMHoiLz48cGF0aCBmaWxsPSIjNUFBNzhFIiBmaWxsLW9wYWNpdHk9Ii4wMyIgZD0iTTAgMGg2MHY2MEgweiIvPjwvZz48L3N2Zz4=')] opacity-30"></div>
       </div>
       
-      <div className="container mx-auto relative z-10 py-[20px] px-[5px]">
+      <div className="container mx-auto relative z-10 py-[10px] px-[5px]">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl font-bold mb-4">Application to Site Security</h2>
           <p className="text-muted-foreground">
@@ -35,7 +34,7 @@ const KeyFeatures = () => {
           ))}
         </div>
 
-        <div className="mt-16 relative overflow-hidden rounded-lg max-w-4xl mx-auto">
+        <div className="mt-8 relative overflow-hidden rounded-lg max-w-4xl mx-auto">
           <img
             src="/lovable-uploads/4f10630f-539a-4cfa-a47e-414c020b0e8b.png"
             alt="Drone swarm coordination visualization showing multiple drones working together across Cambridge University campus"
