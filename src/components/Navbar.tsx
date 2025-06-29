@@ -98,7 +98,7 @@ const Navbar = () => {
             onClick={() => scrollToSection('key-advantages')} 
             className="text-sm hover:text-sturnus-teal transition-colors"
           >
-            Advantages
+            Capabilities
           </button>
           <Link to="/teams" className="text-sm hover:text-sturnus-yellow transition-colors">
             Team
@@ -134,7 +134,7 @@ const Navbar = () => {
               onClick={() => scrollToSection('key-advantages')} 
               className="text-sm py-2 hover:text-sturnus-teal transition-colors"
             >
-              Advantages
+              Capabilities
             </button>
             <Link 
               to="/teams" 

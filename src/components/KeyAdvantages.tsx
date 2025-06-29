@@ -2,7 +2,7 @@
 import { Calendar, Clock, Users, Sun, BellRing, Target } from "lucide-react";
 import DroneIconNew from "./DroneIconNew";
 
-const advantages = [{
+const capabilities = [{
   icon: Calendar,
   title: "Early-Stage Swarm of Three Drones",
   description: "Eventually scaling to 20+ drones for future events"
@@ -32,13 +32,13 @@ const KeyAdvantages = () => {
             <h2 className="text-3xl font-bold mb-8">First Prototype Capabilities</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {advantages.map((advantage, index) => <div key={index} className="flex items-start space-x-4">
+              {capabilities.map((capability, index) => <div key={index} className="flex items-start space-x-4">
                   <div className="mt-1 rounded-full bg-sturnus-teal/10 p-2 flex-shrink-0">
-                    <advantage.icon className="h-5 w-5 text-sturnus-teal" />
+                    <capability.icon className="h-5 w-5 text-sturnus-teal" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">{advantage.title}</h3>
-                    <p className="text-sm text-muted-foreground">{advantage.description}</p>
+                    <h3 className="font-semibold mb-1">{capability.title}</h3>
+                    <p className="text-sm text-muted-foreground">{capability.description}</p>
                   </div>
                 </div>)}
             </div>
