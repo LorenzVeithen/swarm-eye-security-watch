@@ -41,13 +41,6 @@ const KeyFeatures = () => {
             alt="Drone swarm coordination visualization showing multiple drones working together across Cambridge University campus"
             className="w-full h-auto rounded-lg shadow-lg"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-          <div className="absolute bottom-0 left-0 w-full p-6">
-            <h3 className="text-2xl font-bold mb-2">Threat Identification</h3>
-            <p className="text-gray-200 mb-4 max-w-2xl">
-              Our drones autonomously identify potential intruders approaching and trespassing a given site perimeter.
-            </p>
-          </div>
         </div>
       </div>
     </section>
