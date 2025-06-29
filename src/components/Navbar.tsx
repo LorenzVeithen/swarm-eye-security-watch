@@ -92,7 +92,7 @@ const Navbar = () => {
             onClick={() => scrollToSection('features')} 
             className="text-sm hover:text-sturnus-green transition-colors"
           >
-            Features
+            Site security
           </button>
           <button 
             onClick={() => scrollToSection('key-advantages')} 
@@ -128,7 +128,7 @@ const Navbar = () => {
               onClick={() => scrollToSection('features')} 
               className="text-sm py-2 hover:text-sturnus-green transition-colors"
             >
-              Features
+              Site security
             </button>
             <button 
               onClick={() => scrollToSection('key-advantages')} 
