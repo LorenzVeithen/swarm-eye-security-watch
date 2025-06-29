@@ -29,7 +29,7 @@ const Navbar = () => {
       // If the element exists, scroll to it with an offset
       if (element) {
         setTimeout(() => {
-          const navbarHeight = 96; // Adjusted navbar height offset
+          const navbarHeight = 0; // No offset - align directly at top
           const elementPosition = element.getBoundingClientRect().top;
           const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
           
@@ -54,7 +54,7 @@ const Navbar = () => {
     // If we're already on the home page
     const element = document.getElementById(id);
     if (element) {
-      const navbarHeight = 96; // Adjusted navbar height offset
+      const navbarHeight = 0; // No offset - align directly at top
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
       
