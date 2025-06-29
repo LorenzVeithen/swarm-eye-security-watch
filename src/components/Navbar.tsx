@@ -103,12 +103,9 @@ const Navbar = () => {
           <Link to="/teams" className="text-sm hover:text-sturnus-yellow transition-colors">
             Team
           </Link>
-          <button 
-            onClick={() => scrollToSection('contact')} 
-            className="text-sm hover:text-sturnus-teal transition-colors"
-          >
+          <Link to="/contact" className="text-sm hover:text-sturnus-teal transition-colors">
             Contact
-          </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -146,12 +143,13 @@ const Navbar = () => {
             >
               Team
             </Link>
-            <button 
-              onClick={() => scrollToSection('contact')} 
-              className="text-sm py-2 hover:text-sturnus-yellow transition-colors"
+            <Link 
+              to="/contact" 
+              className="text-sm py-2 hover:text-sturnus-teal transition-colors"
+              onClick={() => setIsMenuOpen(false)}
             >
               Contact
-            </button>
+            </Link>
           </div>
         </div>
       )}
