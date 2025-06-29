@@ -2,11 +2,6 @@
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
-  const handleLearnMore = () => {
-    const aboutSection = document.getElementById('about');
-    aboutSection?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
       {/* GIF Background */}
@@ -34,23 +29,15 @@ const Hero = () => {
               Enabling multi-species aerial drones to work together as an intelligent swarm, controlled by a single operator.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <a 
                 href="mailto:lavv2@cam.ac.uk?subject=STURNUS%20Chat%20Request&body=I'm%20interested%20in%20learning%20more%20about%20STURNUS%20drone%20swarm%20technology."
                 className="inline-block"
               >
-                <Button size="lg" className="bg-sturnus-teal hover:bg-sturnus-teal/90 text-white w-full">
+                <Button size="lg" className="bg-sturnus-teal hover:bg-sturnus-teal/90 text-white">
                   Request a Chat
                 </Button>
               </a>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-sturnus-teal text-sturnus-teal hover:bg-sturnus-teal/10"
-                onClick={handleLearnMore}
-              >
-                Learn More
-              </Button>
             </div>
           </div>
         </div>
