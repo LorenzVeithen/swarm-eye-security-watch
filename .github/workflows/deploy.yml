@@ -32,3 +32,6 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
+
+    - name: Set custom domain
+      run: echo "yourdomain.com" > dist/CNAME
