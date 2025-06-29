@@ -4,12 +4,12 @@ import { Button } from "@/components/ui/button";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
-      {/* GIF Background */}
+      {/* Image Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute w-full h-full">
           <img
-            src="/your-hero-gif.gif" // 👈 Update this path to your uploaded GIF
-            alt="Drone swarm"
+            src="/lovable-uploads/458539cb-4183-4d2c-83a3-1c68f849e914.png"
+            alt="Starling murmuration over water"
             className="w-full h-full object-cover"
           />
         </div>
