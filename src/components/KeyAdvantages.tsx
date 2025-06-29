@@ -26,7 +26,7 @@ const capabilities = [{
 
 const KeyAdvantages = () => {
   return (
-    <section id="key-capabilities" className="bg-secondary/50 relative overflow-hidden py-[20px]">
+    <section id="key-advantages" className="bg-secondary/50 relative overflow-hidden py-[20px]">
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">First Prototype Capabilities</h2>
