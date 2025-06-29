@@ -1,9 +1,9 @@
 
 import { Mail, MapPin, Linkedin } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
-  return <footer className="bg-secondary py-12 border-t border-accent/10">
+  return (
+    <footer className="bg-secondary py-12 border-t border-accent/10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="md:col-span-1">
@@ -45,17 +45,10 @@ const Footer = () => {
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} STURNUS. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link to="/privacy-policy" className="text-sm text-muted-foreground hover:text-security-500 transition-colors">
-              Privacy Policy
-            </Link>
-            <Link to="/terms-of-service" className="text-sm text-muted-foreground hover:text-security-500 transition-colors">
-              Terms of Service
-            </Link>
-          </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
 
 export default Footer;

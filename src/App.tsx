@@ -9,8 +9,6 @@ import NotFound from "./pages/NotFound";
 import Teams from "./pages/Teams";
 import Contact from "./pages/Contact";
 // import Careers from "./pages/Careers";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsOfService from "./pages/TermsOfService";
 
 // Create a client outside of the component
 const queryClient = new QueryClient();
@@ -25,8 +23,6 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/teams" element={<Teams />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-of-service" element={<TermsOfService />} />
           {/* Careers route hidden for later use */}
           {/* <Route path="/careers" element={<Careers />} /> */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
