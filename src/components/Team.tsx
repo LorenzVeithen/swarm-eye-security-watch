@@ -19,15 +19,15 @@ const Team = () => {
           <Card className="bg-secondary/40 backdrop-blur-sm border border-accent/20 overflow-hidden">
             <CardContent className="p-0">
               <div className="p-6">
-                <div className="mb-4 flex items-center space-x-4">
-                  <Avatar className="h-16 w-16">
+                <div className="mb-6 flex flex-col items-center">
+                  <Avatar className="h-32 w-32 mb-4">
                     <AvatarImage 
                       src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
                       alt="Lorenz Veithen"
                     />
                     <AvatarFallback>LV</AvatarFallback>
                   </Avatar>
-                  <div>
+                  <div className="text-center">
                     <h3 className="text-xl font-bold">Lorenz Veithen</h3>
                     <p className="text-sturnus-teal">CEO</p>
                   </div>
@@ -70,15 +70,15 @@ const Team = () => {
           <Card className="bg-secondary/40 backdrop-blur-sm border border-accent/20 overflow-hidden">
             <CardContent className="p-0">
               <div className="p-6">
-                <div className="mb-4 flex items-center space-x-4">
-                  <Avatar className="h-16 w-16">
+                <div className="mb-6 flex flex-col items-center">
+                  <Avatar className="h-32 w-32 mb-4">
                     <AvatarImage 
                       src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
                       alt="Kai-Fung Chu"
                     />
                     <AvatarFallback>KC</AvatarFallback>
                   </Avatar>
-                  <div>
+                  <div className="text-center">
                     <h3 className="text-xl font-bold">Kai-Fung Chu</h3>
                     <p className="text-sturnus-green">CTO</p>
                   </div>
