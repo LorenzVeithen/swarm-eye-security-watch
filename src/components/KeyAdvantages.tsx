@@ -26,14 +26,26 @@ const capabilities = [{
 
 const KeyAdvantages = () => {
   return (
-    <section id="key-capabilities" className="bg-secondary/50 relative overflow-hidden py-[20px]">
+    <section 
+      id="key-capabilities" 
+      className="bg-secondary/50 relative overflow-hidden py-[20px]"
+      style={{
+        backgroundImage: `url('/lovable-uploads/dd751b91-82ea-4983-b822-0d12bb893def.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-secondary/70"></div>
+      
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">First Prototype Capabilities</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-white">First Prototype Capabilities</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {capabilities.map((capability, index) => (
-              <div key={index} className="flex items-start space-x-4">
+              <div key={index} className="flex items-start space-x-4 bg-white/90 backdrop-blur-sm rounded-lg p-4">
                 <div className="mt-1 rounded-full bg-sturnus-teal/10 p-2 flex-shrink-0">
                   <capability.icon className="h-5 w-5 text-sturnus-teal" />
                 </div>
