@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -29,7 +30,7 @@ const Navbar = () => {
       // If the element exists, scroll to it with an offset
       if (element) {
         setTimeout(() => {
-          const navbarHeight = 15; // 15px offset for better positioning
+          const navbarHeight = 20; // 20px offset for better positioning
           const elementPosition = element.getBoundingClientRect().top;
           const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
           
@@ -54,7 +55,7 @@ const Navbar = () => {
     // If we're already on the home page
     const element = document.getElementById(id);
     if (element) {
-      const navbarHeight = 15; // 15px offset for better positioning
+      const navbarHeight = 20; // 20px offset for better positioning
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
       
