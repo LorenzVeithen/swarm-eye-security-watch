@@ -2,7 +2,7 @@
 import { User, Briefcase, Award, Code, GraduationCap, Linkedin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Team = () => {
   return <section id="team" className="bg-secondary/20 py-[20px]">
@@ -15,21 +15,18 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto mb-8 rounded-lg overflow-hidden shadow-lg">
-          <AspectRatio ratio={16/9}>
-            <img 
-              src="/lovable-uploads/a0cf3b2d-477e-4229-a17c-112385a6a5da.png"
-              alt="STURNUS founders at Cambridge University"
-              className="w-full h-full object-cover"
-            />
-          </AspectRatio>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           <Card className="bg-secondary/40 backdrop-blur-sm border border-accent/20 overflow-hidden">
             <CardContent className="p-0">
               <div className="p-6">
-                <div className="mb-4">
+                <div className="mb-4 flex items-center space-x-4">
+                  <Avatar className="h-16 w-16">
+                    <AvatarImage 
+                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                      alt="Lorenz Veithen"
+                    />
+                    <AvatarFallback>LV</AvatarFallback>
+                  </Avatar>
                   <div>
                     <h3 className="text-xl font-bold">Lorenz Veithen</h3>
                     <p className="text-sturnus-teal">CEO</p>
@@ -73,7 +70,14 @@ const Team = () => {
           <Card className="bg-secondary/40 backdrop-blur-sm border border-accent/20 overflow-hidden">
             <CardContent className="p-0">
               <div className="p-6">
-                <div className="mb-4">
+                <div className="mb-4 flex items-center space-x-4">
+                  <Avatar className="h-16 w-16">
+                    <AvatarImage 
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                      alt="Kai-Fung Chu"
+                    />
+                    <AvatarFallback>KC</AvatarFallback>
+                  </Avatar>
                   <div>
                     <h3 className="text-xl font-bold">Kai-Fung Chu</h3>
                     <p className="text-sturnus-green">CTO</p>
@@ -120,4 +124,3 @@ const Team = () => {
 };
 
 export default Team;
-
