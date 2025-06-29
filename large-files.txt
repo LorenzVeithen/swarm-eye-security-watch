@@ -1,0 +1,3 @@
+node_modules/@swc/core-darwin-arm64/swc.darwin-arm64.node
+src/components/images/DEMO1.mp4
+src/components/images/DEMO2.mp4
