@@ -100,7 +100,7 @@ const Team = () => {
                   </div>
                   <div className="flex items-center">
                     <User className="h-4 w-4 text-sturnus-yellow mr-2" />
-                    <span className="text-sm">Raised £250K for reasearch and published 27 articles with 450+ citations</span>
+                    <span className="text-sm">More than 10 years experience in academic research and industrial R&D with 30+ technical publications</span>
                   </div>
                 </div>
 
