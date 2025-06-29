@@ -22,7 +22,7 @@ const Team = () => {
                 <div className="mb-6 flex flex-col items-center">
                   <Avatar className="h-32 w-32 mb-4">
                     <AvatarImage 
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                      src="/lovable-uploads/95080a95-d28e-4919-9096-ad3b3f8fbfbf.png" 
                       alt="Lorenz Veithen"
                     />
                     <AvatarFallback>LV</AvatarFallback>
@@ -73,7 +73,7 @@ const Team = () => {
                 <div className="mb-6 flex flex-col items-center">
                   <Avatar className="h-32 w-32 mb-4">
                     <AvatarImage 
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                      src="/lovable-uploads/934ef754-879c-4b9f-a9a8-1f0ea3f110bc.png" 
                       alt="Kai-Fung Chu"
                     />
                     <AvatarFallback>KC</AvatarFallback>
