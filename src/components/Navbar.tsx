@@ -109,7 +109,6 @@ const Navbar = () => {
           >
             Contact
           </button>
-          <Link to="/blog" className="text-sm hover:text-sturnus-teal transition-colors">Blog</Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -153,13 +152,6 @@ const Navbar = () => {
             >
               Contact
             </button>
-            <Link 
-              to="/blog" 
-              className="text-sm py-2 hover:text-sturnus-teal transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Blog
-            </Link>
           </div>
         </div>
       )}
