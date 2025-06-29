@@ -27,7 +27,7 @@ const Index = () => {
               </div>
               <div className="relative rounded-lg overflow-hidden shadow-2xl">
                 <img
-                  src="/lovable-uploads/9f539ca6-6a79-412b-bc5c-2733491237e1.png"
+                  src="/lovable-uploads/c2216706-cbd8-45a8-8477-3eb69f7b3364.png"
                   alt="Drone Manager GUI showing multi-drone coordination interface with camera views, map, and control options"
                   className="w-full h-auto"
                 />
